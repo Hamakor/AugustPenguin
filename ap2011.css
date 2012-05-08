@@ -1,0 +1,101 @@
+#header {
+	opacity: 0.9;
+	background:   #C4D5EA;
+	background:   rgba(22,89,172,0.25);   
+	background:      -o-linear-gradient(top, #1659ac, rgba(255,255,255,0));
+	background:     -ms-linear-gradient(top, #1659ac, rgba(255,255,255,0));
+	background:    -moz-linear-gradient(top, #1659ac, rgba(22,89,172,0));
+	background: -webkit-linear-gradient(top, #1659ac, rgba(255,255,255,0));
+/*	background:         linear-gradient(top, #1659ac, rgba(255,255,255,0));*/
+
+	padding: 1em;
+	position: fixed;
+	top: 0; left: 0; right: 0;
+	height: 100px;
+}
+body {
+	margin: 5em auto 0 auto;
+	direction: rtl;
+}
+#header .hgroup { 
+	background: url(idea1_v6_logo.png) no-repeat center top;
+	background: url(idea1_v6_logo.png) no-repeat center top, -webkit-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+	background: url(idea1_v6_logo.png) no-repeat center top,    -moz-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
+	background: url(idea1_v6_logo.png) no-repeat center top,     -ms-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
+	background: url(idea1_v6_logo.png) no-repeat center top,      -o-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
+	background: url(idea1_v6_logo.png) no-repeat center top,         radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
+	min-height: 100px;
+}
+#header h1 {
+	margin: 0;
+	visibility: hidden;
+
+}
+#content { 
+	background: #F8F6F5;
+	box-shadow: 0 0 15px #ddd;
+	border-radius: 50px;
+}
+
+#content, #sponsorship{
+	width: 700px; 
+	margin: 2ex auto auto;
+	border-radius: 50px;
+	padding: 20px 50px;
+}
+
+#sponsorship {
+	margin-top: 25px;
+	text-align: center;
+	min-height: 100%;
+}
+
+#content h2 {
+	color: #EEBD0C;
+	text-align: center;
+	text-shadow: 0 0 3px white;
+	border-bottom: 3px double;
+}
+
+#extended {
+	font-size: 80%;	
+}
+
+#footer {
+	border-top: dotted 1px #eee;
+	background: #ddd;
+	margin-top: 25px;
+	padding: 25px;
+	text-align: center;
+	direction: ltr;
+}	
+
+h2 {
+	font-family: "Ellinia CLM Bold", "ElliniaCLMBoldttf_font";
+}
+@font-face {
+	src: url("ElliniaCLM-Bold.ttf");
+	font-family: "ElliniaCLMBoldttf_font";
+}
+
+#greetings {
+	font-size: 200%;
+	font-family: "Anka CLM Bold,אנקה שמן", "אנקה שמן", "Anka CLM Bold", "fancyankaotfAnkaCLMBoldotf_font";
+	text-align: center;
+}
+
+	@font-face {
+	src: url("AnkaCLM-Bold.otf");
+	font-family: "fancyankaotfAnkaCLMBoldotf_font";
+}
+
+#greetings:before { 
+	display: block;
+	background: url(favicon_1.png) no-repeat;
+	height: 256px; width: 256px;
+	margin: auto;
+	content:"";
+}
+#greetings { 
+	margin-bottom: 150px;
+}
