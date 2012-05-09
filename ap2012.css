@@ -19,12 +19,12 @@ body {
 	direction: rtl;
 }
 #header .hgroup { 
-	background: url(favicon_1.png) no-repeat center top;
-	background: url(favicon_1.png) no-repeat center top, -webkit-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
-	background: url(favicon_1.png) no-repeat center top,    -moz-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	background: url(favicon_1.png) no-repeat center top,     -ms-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	background: url(favicon_1.png) no-repeat center top,      -o-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	background: url(favicon_1.png) no-repeat center top,         radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
+	background: url(ap_logo.png) no-repeat center top;
+	background: url(ap_logo.png) no-repeat center top, -webkit-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+	background: url(ap_logo.png) no-repeat center top,    -moz-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
+	background: url(ap_logo.png) no-repeat center top,     -ms-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
+	background: url(ap_logo.png) no-repeat center top,      -o-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
+	background: url(ap_logo.png) no-repeat center top,         radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
 	min-height: 100px;
 }
 #header h1 {
