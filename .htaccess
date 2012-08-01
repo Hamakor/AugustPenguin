@@ -1,0 +1,10 @@
+<IfModule mod_headers.c>
+    Header unset Pragma
+    FileETag None
+    Header unset ETag
+ 
+    # 1 HOUR
+    <filesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=3600, must-revalidate"
+    </filesMatch>
+</IfModule>
