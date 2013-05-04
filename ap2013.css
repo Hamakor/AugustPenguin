@@ -6,7 +6,7 @@
 	background:     -ms-linear-gradient(top, #1659ac, rgba(255,255,255,0));
 	background:    -moz-linear-gradient(top, #1659ac, rgba(22,89,172,0));
 	background: -webkit-linear-gradient(top, #1659ac, rgba(255,255,255,0));
-/*	background:         linear-gradient(top, #1659ac, rgba(255,255,255,0));*/
+	background:         linear-gradient(top, #1659ac, rgba(255,255,255,0));
 
 	padding: 1em;
 	position: fixed;
@@ -98,4 +98,27 @@ h1, h2 {
 }
 #greetings { 
 	margin-bottom: 150px;
+}
+
+/* animation time! */
+
+#greetings:hover:before {
+	position: relative;
+	
+	animation-duration: 1s;
+	animation-name: jump;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in;
+}
+ 
+@keyframes jump {
+	from {
+		top:0
+	}
+	50% {
+		top:-50px
+	}
+	to {
+		top:0
+	}
 }
