@@ -32,6 +32,9 @@ body {
 	visibility: hidden;
 
 }
+
+#content a[name] { position: relative; top: -100px;}
+
 #content { 
 	background: #F8F6F5;
 	box-shadow: 0 0 15px #ddd;
