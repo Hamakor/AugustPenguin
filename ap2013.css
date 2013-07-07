@@ -33,6 +33,9 @@ body {
 
 }
 
+div#previous.section		{position: absolute; top: 120px; left: 2em; }
+div#contribute.section	{position: absolute; top: 400px; left: 2em; max-width: 30em;}
+
 #content a[name] { position: relative; top: -100px;}
 
 #content table {border-collapse:collapse; margin: auto;}
