@@ -79,6 +79,8 @@ div#contribute.section	{position: absolute; top: 400px; left: 2em; max-width: 30
 	direction: ltr;
 }	
 
+#content #schedule-section dl dt { border-bottom: 1px solid gray; }
+
 h1, h2 {
 	font-family: "Ellinia CLM Bold", "ElliniaCLMBoldttf_font";
 }
