@@ -133,3 +133,22 @@ h1, h2 {
 		top:0
 	}
 }
+
+/* responsive sytle */
+@media screen and (max-width: 400px) {
+        #header .hgroup {
+            background-size: 90%;
+    }
+}
+@media screen and (max-width: 768px) {
+    #header {
+        position: absolute;
+    }
+    #sponsorship>img {
+        display: none;
+    }
+    #extended div.section {
+        position: static;
+        margin-right: 20px;
+    }
+}
