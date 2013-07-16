@@ -19,6 +19,14 @@
 		<title>אוגוסט פינגווין 2013</title>
 		<link rel="stylesheet"    href="ap2013.css"    type="text/css"  />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			#map { height: 360px; }
+		</style>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
+<!--[if lte IE 8]>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" />
+<![endif]-->
+		<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -76,8 +84,51 @@
 				</ul>
 			</div>
 
-<iframe id="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps/ms?msid=217549688823486127317.0004dbe0c596d89a183e8&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;z=16&amp;output=embed"></iframe>
-			
+			<div id="map"><a href="https://maps.google.com/maps/ms?msid=217549688823486127317.0004dbe0c596d89a183e8&amp;msa=0&amp;ie=UTF8&amp;t=m&amp;z=16&amp;output=embed">הוראות הגעה לאוגוסט פינגווין ב־Google Maps</a></div>
+
+		<script type="text/javascript">
+	var map = L.map('map').setView([32.791313, 34.965305], 16);
+	
+	L.tileLayer('http://{s}.tile.cloudmade.com/42f53fddfc4b4bc8ab4b9d8e5447b38a/997/256/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://cloudmade.com">CloudMade</a>',
+    maxZoom: 18
+}).addTo(map);
+
+
+var penguinIcon = L.icon({
+    iconUrl: 'favicon_1.png',
+//    shadowUrl: 'leaf-shadow.png',
+    iconSize:     [64, 64], // size of the icon
+//    shadowSize:   [50, 64], // size of the shadow
+    iconAnchor:   [32, 32], // point of the icon which will correspond to marker's location
+//    shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [0,-32] // point from which the popup should open relative to the iconAnchor
+});
+
+var eventMarker = L.marker([32.791313, 34.965305], {icon: penguinIcon}).addTo(map);
+eventMarker.bindPopup("<b>מרכז הקונגרסים חיפה</b><br>כאן ייערך הכנס. ☺").openPopup();
+
+var parkingIcon = L.icon({
+    iconUrl: 'http://upload.wikimedia.org/wikipedia/commons/f/f9/Parking_sign.png',
+    iconSize:     [32, 32], // size of the icon
+    iconAnchor:   [16, 16], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0,-16] // point from which the popup should open relative to the iconAnchor
+});
+
+var parkingMarker = L.marker([32.79184, 34.96327], {icon: parkingIcon}).addTo(map);
+parkingMarker.bindPopup("חניון מרכז הקונגרסים");
+
+
+// DEBUG
+function onMapClick(e) {
+    console.log("You clicked the map at " + e.latlng);
+}
+map.on('click', onMapClick);
+
+		</script>
+
+
+
 			<a id="cost" name="cost"></a>
 			<h2> מחיר הכניסה </h2>
 				<p>דמי הכניסה לכנס הינם 50 ש״ח (צעירים מתחת לגיל 18, חיילים וסטודנטים דמי הכניסה הינם 20 ש״ח). לחברי וידידי עמותת המקור עם חברות בתוקף הכניסה ללא עלות. 
