@@ -152,3 +152,17 @@ h1, h2 {
         margin-right: 20px;
     }
 }
+
+
+#schedule-section table th,
+#schedule-section table td[colspan] {
+   background-color: #ccc;
+}
+
+#schedule-section table tbody tr:nth-child(odd) {
+   background-color: #ddd;
+}
+
+#schedule-section table tbody tr td:nth-child(odd) {
+   background-color: rgba(255,225,224,0.4) ;
+}
