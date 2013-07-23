@@ -136,7 +136,7 @@ h1, h2 {
 }
 
 
-/* responsive sytle */
+/* responsive style */
 @media screen and (max-width: 400px) {
         #header .hgroup {
             background-size: 90%;
