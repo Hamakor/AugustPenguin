@@ -164,5 +164,5 @@ h1, h2 {
 }
 
 #schedule-section table tbody tr td:nth-child(odd) {
-   background-color: rgba(255,225,224,0.4) ;
+   background-color: rgba(255,255,224,0.4) ;
 }
