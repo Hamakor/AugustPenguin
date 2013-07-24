@@ -112,29 +112,31 @@ h1, h2 {
 }
 
 /* animation time! */
-
-#greetings:hover:before {
-	position: relative;
+@media screen and (min-width: 400px) {
+	#greetings:hover:before {
+		position: relative;
 	
-	animation-duration: 1s;
-	animation-name: jump;
-	animation-fill-mode: both;
-	animation-timing-function: ease-in;
-}
+		animation-duration: 1s;
+		animation-name: jump;
+		animation-fill-mode: both;
+		animation-timing-function: ease-in;
+	}
  
-@keyframes jump {
-	from {
-		top:0
-	}
-	50% {
-		top:-50px
-	}
-	to {
-		top:0
+	@keyframes jump {
+		from {
+			top:0
+		}
+		50% {
+			top:-50px
+		}
+		to {
+			top:0
+		}
 	}
 }
 
-/* responsive sytle */
+
+/* responsive style */
 @media screen and (max-width: 400px) {
         #header .hgroup {
             background-size: 90%;
@@ -151,4 +153,18 @@ h1, h2 {
         position: static;
         margin-right: 20px;
     }
+}
+
+
+#schedule-section table th,
+#schedule-section table td[colspan] {
+   background-color: #ccc;
+}
+
+#schedule-section table tbody tr:nth-child(odd) {
+   background-color: #ddd;
+}
+
+#schedule-section table tbody tr td:nth-child(odd) {
+   background-color: rgba(255,255,224,0.4) ;
 }

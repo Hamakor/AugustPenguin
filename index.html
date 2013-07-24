@@ -46,15 +46,6 @@
 		<div class="section" id="content">
 		<div class="section" id="main">
 
-			<h2>היכונו היכונו!</h2>
-				<p>בימים אלו אנו עמלים על השלמת ההכנות לכנס אוגוסט פינגווין שיערך בחודש הבא.
-
-				<p>הכנס יכלול השנה נושאים טכניים וקהילתיים מעניינים במיוחד כדי לגרום גם לקהל שלא מכיר קוד פתוח ותוכנה חופשית להיחשף לעולם זה.
-
-				<p>אנו זקוקים למתנדבים שיעזרו בפרסום, יחסי ציבור, לוגיסטיקה והתנדבות כללית ככל שיידרש.
-
-				<p>רעיונות? הצעות? בקשות? יזמה? <a href="#contact">פנו אלינו</a>!
-
 			<a name="location" id="location"></a>
 			<h2>איפה ומתי?</h2>
 
@@ -165,49 +156,100 @@ map.on('click', onMapClick);
 
 				<a id="schedule" name="schedule"></a>
 				<div id="schedule-section">
-					<h2><!--  לו״ז הכנס </h2--> רשימת הרצאות </h2>
+					<h2> לו״ז הכנס </h2>
 					<p>(שימו לב - רשימה זו <strong>אינה סופית</strong> ועשויה להשתנות)</p>
-					<dl>
-						<dt>קהילתי</dt>
-						<dd>
-							<ul>
-								<li>עמיחי פ.ק.: השפעת הקוד הפתוח על האביב הערבי
-								<li>עידו לב: קואופרטיב תוכנה לכלכלה שיתופית בקוד פתוח
-								<li>עו"ד אלי גרינבאום: Oracle v. Google – פסק הדין והשפעתו על קוד פתוח
-								<li>נאוה לוי: Harnessing Open Educational Resources & Open Source Software to Democratize Education
-								<li>עידו קנר: Database free application - תאור גישת עבודה מבוזרת
-								<li>אורי עידן: מתקני בדיקה לציוד אלקטרוני בעזרת לינוקס
-								<li>מרים שוואב: איך לארגן כנס מוצלח של קוד פתוח
-								<li>עו"ד יהונתן קלינגר: Licensing for Dummies
-								<li>אלי מרמור: הפלת פטנטים באמצעות קוד פתוח ישן יותר המיישם אותם
-								<li>יואב פרחי: מודל החברה המבוזרת בקוד פתוח
-							</ul>
-						</dd>
-						<dt>טכני</dt>
-						<dd>
-							<ul>
-								<li>סרגיי מיורוב: בלנדר - כמו אולר שווייצרי אבל בקטע טוב
-								<li>רן תבורי: עולם מסדי הנתונים הפוסט-רציונאליים (NoSQL)
-								<li>לאון רומנובסקי: השפעות זכרון בלתי-נדיף זול ומהיר על מערכת ההפעלה
-								<li>אלון מורייניק: Java Unit Testing 101
-								<li>אמיר אהרוני: איך ויקיפדיה תומכת בשלוש-מאות שפות בבת-אחת
-								<li>לבנת פאר: Introduction to oVirt - An open virtualization project
-								<li>דיאגו יסטרובני: מערכות לינוקס משובצות
-								<li>ארז צארום: אסיפת לוגים מרכזית וניתוחם בעזרת Logstash
-								<li>מארק ולצר: volatile, atomic operations, memory barriers and compiler barriers in GCC.
-								<li>ליאור קיסוס: פרויקט MEAN
-							</ul>
-  					</dd>
-  					<dt>אבטחת מידע</dt>
-  					<dd>
-  						<ul>
-								<li>שייע פידמן: Attack by custom malware
-								<li>גיא אדרי: Man In The Middle - Hands-on
-								<li>דן אמיתי: Hacking the brain by botnet network and crowd research
-								<li>יובל נתיב: האקתון התקפת מידע
-  						</ul>
-  					</dd>
-  				</dl>
+
+					<table>
+						<thead>
+							<tr>
+								<th> שעה </th>
+								<th> קהילתי 1 </th>
+								<th> קהילתי 2 + טכני 2 </th>
+								<th> טכני 1 </th>
+								<th> אבטחת מידע </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th> 09:00 - 09:10 </th>
+								<td colspan="4"> דברי פתיחה </td>
+							</tr>
+							
+							<tr>
+								<th> 09:10 - 09:20 </th>
+								<td colspan="4"> פרס המקור </td>
+							<tr>
+							
+							<tr>
+								<th> 09:25 - 09:55 </th>
+								<td> עידו לב: קואופרטיב תוכנה לכלכלה שיתופית בקוד פתוח
+								<td> עו"ד יהונתן קלינגר: Licensing for Dummies
+								<td> לאון רומנובסקי: השפעות זכרון בלתי-נדיף זול ומהיר על מערכת ההפעלה
+								<td> שייע פידמן: Attack by custom malware
+							</tr>
+							
+							<tr>
+								<th> 10:00 - 10:30 </th>
+								<td> יובל אדם: CryptoParty – פרטיות ואנונימיות לכולם
+								<td> עו"ד אלי גרינבאום: Oracle v. Google – פסק הדין והשפעתו על קוד פתוח
+								<td> אלון מורייניק: Java Unit Testing 101
+								<td rowspan="2"> גיא אדרי: Man In The Middle - Hands-on
+							</tr>
+							
+							<tr>
+								<th> 10:35 - 11:05 </th>
+								<td> יואב פרחי: מודל החברה המבוזרת בקוד פתוח
+								<td> אלי מרמור: הפלת פטנטים באמצעות קוד פתוח ישן יותר המיישם אותם
+								<td> עידו קנר: Database free application - תאור גישת עבודה מבוזרת
+								<!--td> המשך ההרצאה של גיא אדרי </td -->
+
+							</tr>
+
+							<tr>
+								<th> 11:15 - 11:45 </th>
+								<td> נאוה לוי: Harnessing Open Educational Resources & Open Source Software to Democratize Education
+								<td> אמיר אהרוני: איך ויקיפדיה תומכת בשלוש-מאות שפות בבת-אחת
+								<td> לבנת פאר: Introduction to oVirt - An open virtualization project
+								<td> דן אמיתי: Hacking the brain by botnet network and crowd research 
+							</tr>
+
+							<tr>
+								<th> 11:45 - 12:30 </th>
+								<td colspan="4"> הפסקת צהריים </td>
+							<tr>
+
+							<tr>
+								<th> 12:30 - 13:00 </th>
+								<td> אורי עידן: מתקני בדיקה לציוד אלקטרוני בעזרת לינוקס
+								<td> ליאור קיסוס: פרויקט MEAN
+								<td> דיאגו יסטרובני: מערכות לינוקס משובצות
+								<td rowspan="3"> יובל נתיב: האקתון התקפת מידע - ELFים. לא אלה עם האוזניים המחודדות.
+							</tr>
+
+							<tr>
+								<th> 13:05 - 13:35 </th>
+								<td> מרים שוואב: איך לארגן כנס מוצלח של קוד פתוח
+								<td> מארק ולצר: volatile, atomic operations, memory barriers and compiler barriers in GCC. 
+								<td> ארז צארום: אסיפת לוגים מרכזית וניתוחם בעזרת Logstash
+								<!--td> המשך האקטון עם יובל נתיב </td -->
+							</tr>
+
+							<tr>
+								<th> 13:40 - 14:10 </th>
+								<td> עמיחי פ.ק.: השפעת הקוד הפתוח על האביב הערבי
+								<td> דניאל שקורי: הדגמת פיתוח pong מרובה משתתפים בטכנולוגיות node.js, express, socket.io - וקיום תחרות עם הקהל
+								<td> נאור וויסמן: Open Source monitoring in 30 min
+								<!--td> המשך האקטון עם יובל נתיב </td -->
+							</tr>
+
+							<tr>
+								<th> 14:15 - 14:20 </th>
+								<td colspan="4"> דברי סיכום </td>
+							<tr>
+
+						</tbody>
+					</table>
+
 				</div>
 				
 			<a id="social" name="social"></a>
@@ -222,7 +264,7 @@ map.on('click', onMapClick);
 ניתן ליצור קשר עם ועד עמותת המקור ומארגני הכנס בכתובת הדואר האלקטרוני הבאה: board@hamakor.org.il
 			</p>
 
-		<p id="greetings">נשמח לראותכם בכנס שלנו!</p>
+		<p id="greetings">נשמח לראותכם!</p>
 
 			</div>
 
