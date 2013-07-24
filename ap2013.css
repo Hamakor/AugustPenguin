@@ -112,29 +112,31 @@ h1, h2 {
 }
 
 /* animation time! */
-
-#greetings:hover:before {
-	position: relative;
+@media screen and (min-width: 400px) {
+	#greetings:hover:before {
+		position: relative;
 	
-	animation-duration: 1s;
-	animation-name: jump;
-	animation-fill-mode: both;
-	animation-timing-function: ease-in;
-}
+		animation-duration: 1s;
+		animation-name: jump;
+		animation-fill-mode: both;
+		animation-timing-function: ease-in;
+	}
  
-@keyframes jump {
-	from {
-		top:0
-	}
-	50% {
-		top:-50px
-	}
-	to {
-		top:0
+	@keyframes jump {
+		from {
+			top:0
+		}
+		50% {
+			top:-50px
+		}
+		to {
+			top:0
+		}
 	}
 }
 
-/* responsive sytle */
+
+/* responsive style */
 @media screen and (max-width: 400px) {
         #header .hgroup {
             background-size: 90%;
