@@ -12,6 +12,7 @@
 	position: fixed;
 	top: 0; left: 0; right: 0;
 	height: 100px;
+	z-index: 1;
 }
 body {
     font-family: sans-serif;
