@@ -23,11 +23,8 @@
 		<style type="text/css">
 			#map { height: 360px; }
 		</style>
-		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
-<!--[if lte IE 8]>
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" />
-<![endif]-->
-		<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+
+
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -77,15 +74,106 @@
 				</ul>
 			</div>
 
-			<a id="cost" name="cost"></a>
-				<h2> מחיר הכניסה </h2>
-				<p>מחיר הכניסה ייקבע בהמשך.</p>
-			</div>
-
+			<a id="registration" name="registration"></a>
+				<h2> הרשמה לכנס </h2>
+				<p>מחיר הכניסה יתפרסם בהמשך.</p>
 
 			<a id="schedule" name="schedule"></a>
 			<div id="schedule-section">
-				<!--h2> לו״ז הכנס </h2-->
+				<h2> לו״ז הכנס </h2>
+
+				<table>
+					<thead>
+						<tr>
+							<th> </th>
+							<th colspan="3"> </th>
+			
+						</tr>
+					</thead>
+					<tbody>
+						<colgroup span="2" />
+						<tr>
+							<td> 08:30
+							<td colspan="3"> התאספות והרשמה
+						</tr>
+						<tr>
+							<td> 09:00
+							<td colspan="3"> פתיחה ודבר עמותת המקור – ועד העמותה
+						</tr>
+						<tr>
+							<td> 09:15
+							<td colspan="3"> מבוא ל־systemd – לנארט פוטרינג
+						</tr>
+						<tr>
+							<td> 10:00
+							<td colspan="3"> פרס המקור – ועדת הפרס
+						</tr>
+						<tr>
+							<td> 10:20
+							<td colspan="3"> הפסקה, צילום קבוצתי וחלוקה למסלולים
+						</tr>
+
+						<tr>
+							<th> </th>
+							<th> מסלול טכני low-level </th>
+							<th> מסלול טכני high-level </th>
+							<th> מסלול קהילתי </th>
+						</tr>
+
+						<tr>
+							<td> 10:45
+							<td> מתניה מוזס low latency
+							<td> עופר ריבלין Android's security architecture
+							<td> אמיר אהרוני ContentTranslation: איך ייכתבו 20 מיליון הערכים הבאים בוויקיפדיה בכל שפות העולם
+						</tr>
+						<tr>
+							<td> 11:30
+							<td rowspan="2"> אבישי איש־שלום העתיד של מערכות הפעלה
+							<td rowspan="2"> דניאל פוטרמן Appium – אוטומציה לאפליקציות Web ו־mobile
+							<td> לאה כהן רשת אורט וקוד פתוח - הילכו שניים יחדיו בלתי אם נועדו?
+						</tr>
+						<tr>
+							<td> 12:00
+							<!--td--> 
+							<!--td--> 
+							<td rowspan="2"> יעקב קורן תוכנה חופשית וקוד פתוח ו"הרוח החדשה" של הקפיטליזם
+						</tr>
+						<tr>
+							<td> 12:15
+							<td rowspan="3"> לבנת פאר OpenStack as an NFV platform
+							<td rowspan="3"> איליה שר New-generation shells
+							<!--td--> 
+						</tr>
+						<tr>
+							<td> 12:20
+							<!--td--> 
+							<!--td--> 
+							<td> דניאל זאויIntroduction to EFL
+						</tr>
+						<tr>
+							<td> 12:45
+							<!--td--> 
+							<!--td--> 
+							<td rowspan="2"> היפוטק קוד מקור בעידן ה־IoT
+						</tr>
+						<tr>
+							<td> 13:00
+							<td rowspan="2"> חץ בן חמו לינוקס ו־Storage
+							<td rowspan="2"> דב גרוגבלד מבוא ל־PANDAS
+							<!--td--> 
+						</tr>
+						<tr>
+							<td> 13:15
+							<!--td---> 
+							<!--td--> 
+							<td> עמית אבירם התפתחות והסתבכות של פיצ'רים במערכות תוכנה
+						</tr>
+
+						<tr>
+							<td> 13:45
+							<td colspan="3"> דברי סיכום ונעילה
+					</tbody>
+				</table>
 
 			</div>
 				
@@ -133,7 +221,7 @@
 					<p>נשמח למתנדבים מן הקהילה שיעזרו במהלך הכנס. פירוט המשימות שבהן דרושה עזרה נמצא בעמוד "<a href="http://wiki.hamakor.org.il/index.php/%D7%90%D7%95%D7%92%D7%95%D7%A1%D7%98_%D7%A4%D7%99%D7%A0%D7%92%D7%95%D7%95%D7%99%D7%9F/2015#.D7.9E.D7.AA.D7.A0.D7.93.D7.91.D7.99.D7.9D">אוגוסט פינגווין</a>" בוויקי של העמותה, ושם גם ניתן להירשם כמתנדבים. תחום נוסף בו נשמח לעזרה הוא שיווק הכנס – העבירו את ההזמנה לחבריכם.</p>
 				</div>
 			</div>
-		</div>
+
 
 		<div id="footer">cc-by-sa <a href="http://hamakor.org.il">Hamakor</a>. Design by <a href="http://tomercohen.com">Tomer Cohen</a>, graphics by <a href="http://sijp.co.il">Shlomi Israely</a>, font by <a href="http://culmus.sf.net">Culmus project</a>.
 		</div>
