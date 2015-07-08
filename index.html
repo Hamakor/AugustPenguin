@@ -23,11 +23,8 @@
 		<style type="text/css">
 			#map { height: 360px; }
 		</style>
-		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.css" />
-<!--[if lte IE 8]>
-	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.ie.css" />
-<![endif]-->
-		<script src="http://cdn.leafletjs.com/leaflet-0.6.2/leaflet.js"></script>
+
+
 	</head>
 	<body>
 		<div id="fb-root"></div>
@@ -39,14 +36,17 @@
 		</div>
 
 		<div class="section" id="sponsorship">
-			<br><br><br><h2>היכונו היכונו!</h2>
-			<p>אחרי הפסקה של שנה, כנס אוגוסט פינגווין, הכנס הקהילתי לתוכנה חופשית, חוזר השנה. 
-				<a href="http://www.hamakor.org.il/2015/06/21/%d7%90%d7%95%d7%92%d7%95%d7%a1%d7%98-%d7%a4%d7%99%d7%a0%d7%92%d7%95%d7%95%d7%99%d7%9f-2015-%d7%a7%d7%a8%d7%99%d7%90%d7%94-%d7%9c%d7%9e%d7%aa%d7%a0%d7%93%d7%91%d7%99%d7%9d-%d7%95%d7%9e%d7%a8%d7%a6/">מידע נוסף</a></p><br><br><br>
+			<h1>
+				<a href="http://hamakor.org.il/" alt="המקור - עמותה ישראלית לתכנה חופשית ולקוד מקור פתוח"
+					><img src="sponsor_logos/Hamakor_logo.png" style="vertical-align: middle; height:62px; width:217px" 
+				/></a> גאים להציג:
+			</h1>
 
-			<!--img src="ap_button.png" alt="אוגוסט פינגווין 2015 — הכנס השנתי לתכנה חופשית, לינוקס וקוד פתוח." />
+			<img src="ap_button.png" alt="אוגוסט פינגווין 2015 — הכנס השנתי לתכנה חופשית, לינוקס וקוד פתוח." />
 		<h2>בחסות:</h2>
-		<a href="http://hamakor.org.il/" alt="המקור - עמותה ישראלית לתכנה חופשית ולקוד מקור פתוח"><img src="sponsor_logos/Hamakor_logo.png" width="217" height="62" /></a>
-		</div-->
+		<img src="sponsor_logos/XtremIO.png" height="62" alt="XtremIO" />
+		<img src="sponsor_logos/Redhat.png" height="62" alt="Redhat" />
+		</div>
 
 		<div class="section" id="content">
 		<div class="section" id="main">
@@ -66,7 +66,8 @@
 							מיקום הכנס:
 						</dt>
 						<dd>
-							מכללת שנקר
+							בניין מיטשל (הבניין החדש), מכללת שנקר - בי״ס גבוה להנדסה ולעיצוב, רמת גן (<a href="http://www.shenkar.ac.il/template/default.aspx?maincat=5&amp;catid=32" class="external text" title="http://www.shenkar.ac.il/template/default.aspx?maincat=5&amp;catid=32">הוראות הגעה</a>)
+							<a href="geo:32.0897,34.802373?q=32.0897,34.802373(אוגוסט פינגווין 2015)" class="mobile" title="קישור זה עשוי שלא לפעול בדפדפנים שולחניים – ניתן לגשת אליו ממכשירים ניידים">קבלת הוראות הכוונה לנייד</a>
 						</dd>
 					</dl>
 				</div>
@@ -77,15 +78,113 @@
 				</ul>
 			</div>
 
-			<a id="cost" name="cost"></a>
-				<h2> מחיר הכניסה </h2>
-				<p>מחיר הכניסה ייקבע בהמשך.</p>
-			</div>
-
+			<a id="registration" name="registration"></a>
+				<h2> הרשמה לכנס </h2>
+				<p>מחיר הכניסה יתפרסם בהמשך.</p>
 
 			<a id="schedule" name="schedule"></a>
 			<div id="schedule-section">
-				<!--h2> לו״ז הכנס </h2-->
+				<h2> לו״ז הכנס </h2>
+
+				<table>
+					<thead>
+						<tr>
+							<th> </th>
+							<th colspan="5"> </th>
+			
+						</tr>
+					</thead>
+					<tbody>
+						<colgroup span="2" />
+						<tr>
+							<td> 08:30
+							<td colspan="5"> התאספות והרשמה
+						</tr>
+						<tr>
+							<td> 09:00
+							<td colspan="5"> פתיחה ודבר עמותת המקור – ועד העמותה
+						</tr>
+						<tr>
+							<td> 09:15
+							<td colspan="5"> מבוא ל־systemd – <strong class="author">לנארט פוטרינג</strong>
+						</tr>
+						<tr>
+							<td> 10:00
+							<td colspan="5"> פרס המקור – <strong class="author">ועדת הפרס</strong>
+						</tr>
+						<tr>
+							<td> 10:20
+							<td colspan="5"> הפסקה, צילום קבוצתי וחלוקה למסלולים
+						</tr>
+
+						<tr>
+							<!--<th> </th>-->
+							<th colspan="2"> מסלול טכני 1 </th>
+							<th colspan="2"> מסלול טכני 2 </th>
+							<th colspan="2"> מסלול קהילתי </th>
+						</tr>
+
+						<tr>
+							<td> 10:45
+							<td> <strong class="author">מתניה מוזס</strong> low latency
+							<td> 10:45
+							<td> <strong class="author">עופר ריבלין</strong> Android's security architecture
+							<td> 10:45
+							<td> <strong class="author">אמיר אהרוני</strong> ContentTranslation: איך ייכתבו 20 מיליון הערכים הבאים בוויקיפדיה בכל שפות העולם
+						</tr>
+						<tr>
+							<td rowspan="2"> 11:30
+							<td rowspan="2"> <strong class="author">אבישי איש־שלום</strong> העתיד של מערכות הפעלה
+							<td rowspan="2"> 11:30
+							<td rowspan="2"> <strong class="author">דניאל פוטרמן</strong> Appium – אוטומציה לאפליקציות Web ו־mobile
+							<td rowspan="1"> 11:30
+							<td rowspan="1"> <strong class="author">לאה כהן</strong> רשת אורט וקוד פתוח - הילכו שניים יחדיו בלתי אם נועדו?
+						</tr>
+						<tr>
+							<td rowspan="2"> 12:00
+							<!--td--> 
+							<!--td--> 
+							<td rowspan="2"> <strong class="author">היפוטק</strong> קוד מקור בעידן ה־IoT
+						</tr>
+						<tr class="fake-odd">
+							<td rowspan="2"> 12:15
+							<td rowspan="2"> <strong class="author">לבנת פאר</strong> OpenStack as an NFV platform
+							<td rowspan="2"> 12:15
+							<td rowspan="2"> <strong class="author">איליה שר</strong> New-generation shells
+							<!--td--> 
+						</tr>
+						<tr>
+							<td rowspan="1"> 12:30
+							<!--td---> 
+							<!--td--> 
+							<td rowspan="1"> <strong class="author">עמית אבירם</strong> התפתחות והסתבכות של פיצ'רים במערכות תוכנה
+						</tr>
+						<tr>
+							<td> 13:00
+							<td> <strong class="author">חץ בן חמו</strong> לינוקס ו־Storage
+							<td rowspan="2"> 13:00
+							<td rowspan="2"> <strong class="author">דב גרובגלד</strong> מבוא ל־PANDAS
+							<td> 13:00
+							<td> <strong class="author">יעקב קורן</strong> תוכנה חופשית וקוד פתוח ו"הרוח החדשה" של הקפיטליזם
+							<!--td--> 
+						</tr>
+						<tr>
+							<td> 13:25
+							<!--td---> 
+							<!--td--> 
+							<td> <strong class="author">אלון מורייניק</strong> Introduction to oVirt
+							<td> 13:25
+							<!--td--> 
+							<!--td--> 
+							<td> <strong class="author">דניאל זאוי</strong> Introduction to EFL
+						</tr>
+
+						<tr>
+							<td> 13:50
+							<td colspan="5"> דברי סיכום ונעילה
+						</tr>
+					</tbody>
+				</table>
 
 			</div>
 				
@@ -133,7 +232,7 @@
 					<p>נשמח למתנדבים מן הקהילה שיעזרו במהלך הכנס. פירוט המשימות שבהן דרושה עזרה נמצא בעמוד "<a href="http://wiki.hamakor.org.il/index.php/%D7%90%D7%95%D7%92%D7%95%D7%A1%D7%98_%D7%A4%D7%99%D7%A0%D7%92%D7%95%D7%95%D7%99%D7%9F/2015#.D7.9E.D7.AA.D7.A0.D7.93.D7.91.D7.99.D7.9D">אוגוסט פינגווין</a>" בוויקי של העמותה, ושם גם ניתן להירשם כמתנדבים. תחום נוסף בו נשמח לעזרה הוא שיווק הכנס – העבירו את ההזמנה לחבריכם.</p>
 				</div>
 			</div>
-		</div>
+
 
 		<div id="footer">cc-by-sa <a href="http://hamakor.org.il">Hamakor</a>. Design by <a href="http://tomercohen.com">Tomer Cohen</a>, graphics by <a href="http://sijp.co.il">Shlomi Israely</a>, font by <a href="http://culmus.sf.net">Culmus project</a>.
 		</div>

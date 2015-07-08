@@ -166,6 +166,10 @@ h1, h2 {
    background-color: #ddd;
 }
 
+#schedule-section table tbody tr.fake-odd {
+   background-color: #ddd;
+}
+
 #schedule-section table tbody tr td:nth-child(odd) {
    background-color: rgba(255,255,224,0.4) ;
 }
