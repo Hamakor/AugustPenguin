@@ -147,9 +147,14 @@ h1, h2 {
     #header {
         position: absolute;
     }
-    #sponsorship>img {
+    .noMobile {
         display: none;
     }
+
+    .onlyMobild {
+	display: block;
+    }
+
     #extended div.section {
         position: static;
         margin-right: 20px;
