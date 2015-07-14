@@ -160,7 +160,21 @@ h1, h2 {
         margin-right: 20px;
     }
 }
-
+@media screen and (max-width: 600px) {
+	#content table {
+		width: 95vw;
+		table-layout: fixed;
+		display: table;
+		margin-right: -40px;
+	}
+	#content tr {
+		display: table-row;
+	}
+	#content td, #content th {
+		display: table-cell;
+		word-wrap: break-word;
+	}
+}
 
 #schedule-section table th,
 #schedule-section table td[colspan] {
