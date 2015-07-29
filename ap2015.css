@@ -192,3 +192,7 @@ h1, h2 {
 #schedule-section table tbody tr td:nth-child(odd) {
    background-color: rgba(255,255,224,0.4) ;
 }
+
+.sponsors img+img {
+    margin-right: 1.5em;
+}
