@@ -1,7 +1,7 @@
 #header {
 	opacity: 0.9;
 	background:   #C4D5EA;
-	background:   rgba(22,89,172,0.25);   
+	background:   rgba(22,89,172,0.25);
 	background:      -o-linear-gradient(top, #1659ac, rgba(255,255,255,0));
 	background:     -ms-linear-gradient(top, #1659ac, rgba(255,255,255,0));
 	background:    -moz-linear-gradient(top, #1659ac, rgba(22,89,172,0));
@@ -19,13 +19,13 @@ body {
 	margin: 5em auto 0 auto;
 	direction: rtl;
 }
-#header .hgroup { 
+#header .hgroup {
 	background: url(ap_logo.png) no-repeat center top;
 	background: url(ap_logo.png) no-repeat center top, -webkit-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
-	background: url(ap_logo.png) no-repeat center top,    -moz-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	background: url(ap_logo.png) no-repeat center top,     -ms-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	background: url(ap_logo.png) no-repeat center top,      -o-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	background: url(ap_logo.png) no-repeat center top,         radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
+	background: url(ap_logo.png) no-repeat center top,    -moz-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+	background: url(ap_logo.png) no-repeat center top,     -ms-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+	background: url(ap_logo.png) no-repeat center top,      -o-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+	background: url(ap_logo.png) no-repeat center top,         radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
 	min-height: 100px;
 }
 #header h1 {
@@ -34,7 +34,17 @@ body {
 
 }
 
-div#previous.section		{position: absolute; top: 120px; left: 2em; }
+#previous.section{
+	position: absolute;
+	top: 120px;
+	left: 2em;
+	width: 30em;
+}
+
+#previous ul{
+	list-style: none;
+	padding: 0;
+}
 div#contribute.section	{position: absolute; top: 400px; left: 2em; max-width: 30em;}
 
 #content a[name] { position: relative; top: -100px;}
@@ -42,7 +52,7 @@ div#contribute.section	{position: absolute; top: 400px; left: 2em; max-width: 30
 #content table {border-collapse:collapse; margin: auto;}
 #content table td, #content table th {border: 1px solid gray; max-width: 20em; text-align: center;}
 
-#content { 
+#content {
 	background: #F8F6F5;
 	box-shadow: 0 0 15px #ddd;
 	border-radius: 50px;
@@ -68,7 +78,7 @@ div#contribute.section	{position: absolute; top: 400px; left: 2em; max-width: 30
 }
 
 #extended {
-	font-size: 80%;	
+	font-size: 80%;
 }
 
 #footer {
@@ -78,7 +88,7 @@ div#contribute.section	{position: absolute; top: 400px; left: 2em; max-width: 30
 	padding: 25px;
 	text-align: center;
 	direction: ltr;
-}	
+}
 
 #content #schedule-section dl dt { border-bottom: 1px solid gray; }
 
@@ -101,14 +111,14 @@ h1, h2 {
 	font-family: "fancyankaotfAnkaCLMBoldotf_font";
 }
 
-#greetings:before { 
+#greetings:before {
 	display: block;
 	background: url(favicon_1.png) no-repeat;
 	height: 256px; width: 256px;
 	margin: auto;
 	content:"";
 }
-#greetings { 
+#greetings {
 	margin-bottom: 150px;
 }
 
@@ -116,13 +126,13 @@ h1, h2 {
 @media screen and (min-width: 400px) {
 	#greetings:hover:before {
 		position: relative;
-	
+
 		animation-duration: 1s;
 		animation-name: jump;
 		animation-fill-mode: both;
 		animation-timing-function: ease-in;
 	}
- 
+
 	@keyframes jump {
 		from {
 			top:0
