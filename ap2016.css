@@ -1,139 +1,151 @@
 #header {
-	opacity: 0.9;
-	background:   #C4D5EA;
-	background:   rgba(22,89,172,0.25);   
-	background:      -o-linear-gradient(top, #1659ac, rgba(255,255,255,0));
-	background:     -ms-linear-gradient(top, #1659ac, rgba(255,255,255,0));
-	background:    -moz-linear-gradient(top, #1659ac, rgba(22,89,172,0));
-	background: -webkit-linear-gradient(top, #1659ac, rgba(255,255,255,0));
-	background:         linear-gradient(top, #1659ac, rgba(255,255,255,0));
+  opacity: 0.9;
+  background:   #C4D5EA;
+  background:   rgba(22,89,172,0.25);
+  background:      -o-linear-gradient(top, #1659ac, rgba(255,255,255,0));
+  background:     -ms-linear-gradient(top, #1659ac, rgba(255,255,255,0));
+  background:    -moz-linear-gradient(top, #1659ac, rgba(22,89,172,0));
+  background: -webkit-linear-gradient(top, #1659ac, rgba(255,255,255,0));
+  background:         linear-gradient(top, #1659ac, rgba(255,255,255,0));
 
-	padding: 1em;
-	position: fixed;
-	top: 0; left: 0; right: 0;
-	height: 100px;
-	z-index: 1;
+  padding: 1em;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 100px;
+  z-index: 1;
 }
 body {
-    font-family: sans-serif;
-	margin: 5em auto 0 auto;
-	direction: rtl;
+  font-family: sans-serif;
+  margin: 5em auto 0 auto;
+  direction: rtl;
+  text-align: center;
+  padding: 0 50px;
 }
-#header .hgroup { 
-	background: url(ap_logo.png) no-repeat center top;
-	background: url(ap_logo.png) no-repeat center top, -webkit-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
-	background: url(ap_logo.png) no-repeat center top,    -moz-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	background: url(ap_logo.png) no-repeat center top,     -ms-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	background: url(ap_logo.png) no-repeat center top,      -o-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	background: url(ap_logo.png) no-repeat center top,         radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%); 
-	min-height: 100px;
+#header .hgroup {
+  background: url(ap_logo.png) no-repeat center top;
+  background: url(ap_logo.png) no-repeat center top, -webkit-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+  background: url(ap_logo.png) no-repeat center top,    -moz-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+  background: url(ap_logo.png) no-repeat center top,     -ms-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+  background: url(ap_logo.png) no-repeat center top,      -o-radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+  background: url(ap_logo.png) no-repeat center top,         radial-gradient(center,ellipse,rgba(255,255,255,1) 0%, rgba(255,255,255,0) 25%);
+  min-height: 100px;
 }
 #header h1 {
-	margin: 0;
-	visibility: hidden;
-
+  margin: 0;
+  visibility: hidden;
 }
 
-div#previous.section		{position: absolute; top: 120px; left: 2em; }
-div#contribute.section	{position: absolute; top: 400px; left: 2em; max-width: 30em;}
+#previous.section{
+  position: absolute;
+  top: 120px;
+  left: 2em;
+  width: 30em;
+}
+
+#previous ul{
+  list-style: none;
+  padding: 0;
+}
+div#contribute.section  {position: absolute; top: 400px; left: 2em; max-width: 30em;}
 
 #content a[name] { position: relative; top: -100px;}
 
 #content table {border-collapse:collapse; margin: auto;}
-#content table td, #content table th {border: 1px solid gray; max-width: 20em; text-align: center;}
+#content table td, #content table th {border: 1px solid gray; max-width: 20em;}
 
-#content { 
-	background: #F8F6F5;
-	box-shadow: 0 0 15px #ddd;
-	border-radius: 50px;
+#content {
+  background: #F8F6F5;
+  box-shadow: 0 0 15px #ddd;
+  border-radius: 50px;
 }
 
 #content, #sponsorship{
-	margin: 2ex auto auto;
-	border-radius: 50px;
-	padding: 20px 50px;
+  border-radius: 50px;
+  padding: 20px 50px;
 }
 
 #sponsorship {
-	margin-top: 25px;
-	text-align: center;
-	min-height: 100%;
+  margin-top: 25px;
+  min-height: 100%;
 }
 
 #content h2 {
-	color: #EEBD0C;
-	text-align: center;
-	text-shadow: 0 0 3px white;
-	border-bottom: 3px double;
+  color: #EEBD0C;
+  text-shadow: 0 0 3px white;
+  border-bottom: 3px double;
+}
+
+.location {
+  font-size: 120%;
+}
+
+.location dd{
+  margin: 0 0 5px;
 }
 
 #extended {
-	font-size: 80%;	
+  font-size: 80%;
 }
 
 #footer {
-	border-top: dotted 1px #eee;
-	background: #ddd;
-	margin-top: 25px;
-	padding: 25px;
-	text-align: center;
-	direction: ltr;
-}	
-
-#content #schedule-section dl dt { border-bottom: 1px solid gray; }
+  border-top: dotted 1px #eee;
+  background: #ddd;
+  margin-top: 25px;
+  padding: 25px;
+  direction: ltr;
+}
 
 h1, h2 {
-	font-family: "Ellinia CLM Bold", "ElliniaCLMBoldttf_font";
+  font-family: "Ellinia CLM Bold", "ElliniaCLMBoldttf_font";
 }
 @font-face {
-	src: url("ElliniaCLM-Bold.ttf");
-	font-family: "ElliniaCLMBoldttf_font";
+  src: url("ElliniaCLM-Bold.ttf");
+  font-family: "ElliniaCLMBoldttf_font";
 }
 
 #greetings {
-	font-size: 200%;
-	font-family: "Anka CLM Bold,אנקה שמן", "אנקה שמן", "Anka CLM Bold", "fancyankaotfAnkaCLMBoldotf_font";
-	text-align: center;
+  font-size: 200%;
+  font-family: "Anka CLM Bold,אנקה שמן", "אנקה שמן", "Anka CLM Bold", "fancyankaotfAnkaCLMBoldotf_font";
 }
 
-	@font-face {
-	src: url("AnkaCLM-Bold.otf");
-	font-family: "fancyankaotfAnkaCLMBoldotf_font";
+  @font-face {
+  src: url("AnkaCLM-Bold.otf");
+  font-family: "fancyankaotfAnkaCLMBoldotf_font";
 }
 
-#greetings:before { 
-	display: block;
-	background: url(favicon_1.png) no-repeat;
-	height: 256px; width: 256px;
-	margin: auto;
-	content:"";
+#greetings:before {
+  display: block;
+  background: url(favicon_1.png) no-repeat;
+  height: 256px; width: 256px;
+  margin: auto;
+  content:"";
 }
-#greetings { 
-	margin-bottom: 150px;
+#greetings {
+  margin-bottom: 50px;
 }
 
 /* animation time! */
 @media screen and (min-width: 400px) {
-	#greetings:hover:before {
-		position: relative;
-	
-		animation-duration: 1s;
-		animation-name: jump;
-		animation-fill-mode: both;
-		animation-timing-function: ease-in;
-	}
- 
-	@keyframes jump {
-		from {
-			top:0
-		}
-		50% {
-			top:-50px
-		}
-		to {
-			top:0
-		}
-	}
+  #greetings:hover:before {
+    position: relative;
+
+    animation-duration: 1s;
+    animation-name: jump;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes jump {
+    from {
+      top:0
+    }
+    50% {
+      top:-50px
+    }
+    to {
+      top:0
+    }
+  }
 }
 
 
@@ -152,7 +164,7 @@ h1, h2 {
     }
 
     .onlyMobild {
-	display: block;
+  display: block;
     }
 
     #extended div.section {
@@ -161,19 +173,19 @@ h1, h2 {
     }
 }
 @media screen and (max-width: 600px) {
-	#content table {
-		width: 95vw;
-		table-layout: fixed;
-		display: table;
-		margin-right: -40px;
-	}
-	#content tr {
-		display: table-row;
-	}
-	#content td, #content th {
-		display: table-cell;
-		word-wrap: break-word;
-	}
+  #content table {
+    width: 95vw;
+    table-layout: fixed;
+    display: table;
+    margin-right: -40px;
+  }
+  #content tr {
+    display: table-row;
+  }
+  #content td, #content th {
+    display: table-cell;
+    word-wrap: break-word;
+  }
 }
 
 #schedule-section table th,
