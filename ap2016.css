@@ -151,6 +151,12 @@ h1, h2 {
 
 
 /* responsive style */
+@media screen and (min-width: 769px) {
+  .onlyMobile {
+      display: none;
+  }
+}
+
 @media screen and (max-width: 400px) {
         #header .hgroup {
             background-size: 90%;
@@ -164,8 +170,8 @@ h1, h2 {
         display: none;
     }
 
-    .onlyMobild {
-  display: block;
+    .onlyMobile {
+      display: block;
     }
 
     #extended div.section {
