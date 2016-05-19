@@ -67,6 +67,7 @@ div#contribute.section  {position: absolute; top: 400px; left: 2em; max-width: 3
 #sponsorship {
   margin-top: 25px;
   min-height: 100%;
+  position: relative;
 }
 
 #content h2 {
@@ -207,4 +208,9 @@ h1, h2 {
 
 .sponsors img+img {
     margin-right: 1.5em;
+}
+
+.language {
+  position: absolute;
+  margin-top: 40px;
 }
