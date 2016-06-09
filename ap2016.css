@@ -1,4 +1,4 @@
-#header {
+/*#header {
   opacity: 0.9;
   background:   #C4D5EA;
   background:   rgba(22,89,172,0.25);
@@ -126,7 +126,7 @@ h1, h2 {
 }
 
 /* animation time! */
-@media screen and (min-width: 400px) {
+/*@media screen and (min-width: 400px) {
   #greetings:hover:before {
     position: relative;
 
@@ -151,7 +151,7 @@ h1, h2 {
 
 
 /* responsive style */
-@media screen and (min-width: 769px) {
+/*@media screen and (min-width: 769px) {
   .onlyMobile {
       display: none;
   }
@@ -219,4 +219,8 @@ h1, h2 {
 .language {
   position: absolute;
   margin-top: 40px;
+}
+*/
+.rtl {
+    float: left;
 }
