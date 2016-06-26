@@ -87,6 +87,7 @@ body > .container > header > nav > ul > li > a {
   margin-top: 25px;
   padding: 25px;
   direction: ltr;
+  font-size: 14px;
 }
 
 #footer a {
@@ -213,7 +214,51 @@ h1, h2 {
     margin-right: 1.5em;
 }
 
+.sponsors h3 {
+  color: #1e5493;
+}
+
 .language {
   position: absolute;
   margin-top: 40px;
+}
+
+.aug-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+}
+
+.aug-location {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#center-msg {
+  padding: 15px 0;
+  color: #fff;
+  background-color: #1e5493;
+  font-size: 28px;
+  text-align: center;
+}
+
+.inner-logo-sec {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.inner-logo-sec h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 64px;
+  text-align: start;
+}
+
+.inner-logo-sec div {
+  font-size: 30px;
+  padding-right: 14px;
+}
+
+.website-license {
 }
