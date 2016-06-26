@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: arial;
   margin: 5em auto 0 auto;
   direction: rtl;
   text-align: center;
@@ -94,7 +94,7 @@ body > .container > header > nav > ul > li > a {
 }
 
 h1, h2 {
-  font-family: "Ellinia CLM Bold", "ElliniaCLMBoldttf_font";
+  font-family: "arial";
 }
 @font-face {
   src: url("ElliniaCLM-Bold.ttf");
