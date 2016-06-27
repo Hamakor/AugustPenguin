@@ -164,8 +164,21 @@ h1, h2 {
     #header {
         position: absolute;
     }
+
+    body > .container > header > nav > ul > li > a {
+        font-size: 12px;
+        vertical-align: top;
+
+    }
+
     .noMobile {
         display: none;
+    }
+
+    .section-float {
+        float: inherit;
+        margin: inherit;
+        width: inherit;
     }
 
     .onlyMobile {
