@@ -223,8 +223,20 @@ h1, h2 {
    background-color: rgba(255,255,224,0.4) ;
 }
 
-.sponsors img+img {
-    margin-right: 1.5em;
+.sponsor, .sponsor a{
+  display: inline-block;
+}
+
+.gold img{
+  height: 200px;
+}
+
+.silver img{
+  height: 150px;
+}
+
+.bronze img{
+  height: 100px;
 }
 
 .sponsors h3 {
