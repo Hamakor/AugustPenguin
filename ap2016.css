@@ -224,7 +224,8 @@ h1, h2 {
 }
 
 .gold img{
-  height: 200px;
+    width: 80vw;
+    max-width: 600px;
 }
 
 .silver img{
