@@ -23,6 +23,15 @@ h2, h3, h4, h5, h6 {
   color: #C65B2E;
 }
 
+.btn {
+  background-color: #1111ff;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+}
+
 body > .container > header > nav {
   border-bottom: 1px solid #d1d1d1;
   position: fixed;
