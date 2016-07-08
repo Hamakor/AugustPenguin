@@ -223,17 +223,8 @@ h1, h2 {
   display: inline-block;
 }
 
-.gold img{
-    width: 80vw;
-    max-width: 600px;
-}
-
-.silver img{
-  height: 150px;
-}
-
-.bronze img{
-  height: 100px;
+.sponsor img {
+  max-width: 80vw;
 }
 
 .sponsors h3 {
