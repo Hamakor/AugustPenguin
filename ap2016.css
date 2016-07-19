@@ -293,3 +293,17 @@ h1, h2 {
 
 .website-license {
 }
+
+.gh-ribbon{
+  position: fixed; 
+  top: 0;
+  border: 0;
+  z-index: 10000;
+}
+
+@media screen and (max-width: 768px){
+  .gh-ribbon{
+    display: none;
+  }
+}
+
