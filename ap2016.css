@@ -504,6 +504,13 @@ h1, h2 {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+    .branch-description .branch {
+        float: left;
+        width: 33.33333%;
+    }
+}
+
 .avatar {
     width: 96px;
     height: 96px;
@@ -530,9 +537,9 @@ h1, h2 {
 
 @media (min-width: 768px) {
     .talk-block .practical .commit-holder {
-        right: 66.66667%;
-        float: left;
-        width: 33.33333%;
+        right: 80%;
+        float: right;
+        width: 20%;
     }
 }
 .talk-block .practical .commit-holder {
