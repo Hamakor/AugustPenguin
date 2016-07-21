@@ -137,11 +137,24 @@ body > .container > header > nav > ul > li > a {
     left: 50%;
 }
 
-.event_full {
-    margin-left: -10px;
-    margin-right: -10px;
+@media (min-width: 768px) {
+    .event-full .commit {
+        right: 41.66667%;
+        float: left;
+        width: 16.66667%;
+    }
 }
 
+.event-full .commit {
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.event-full .user {
+    position: relative;
+}
 
 .event-full.general .title {
     padding-top: 10px;
@@ -436,5 +449,96 @@ h1, h2 {
   .gh-ribbon{
     display: none;
   }
+}
+
+.branch-description {
+    margin-left: -10px;
+    margin-right: -10px;
+    vertical-align: bottom;
+}
+
+.branch-description:before, .branch-description:after {
+    content: " ";
+    display: table;
+}
+
+.branch-description:after {
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .branch-description .branch-name {
+        float: left;
+        width: 33.33333%;
+    }
+}
+
+.branch-description .branch-name {
+        position: relative;
+        min-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 100px;
+        font-size: 24px;
+}
+
+.branch-description .master {
+    right: 10px;
+}
+
+.branch-description .master, .branch-description .practical {
+    position: absolute;
+    bottom: 0;
+}
+
+.branch-description .branch {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: -1px;
+}
+.branch {
+    height: 103px;
+    margin-bottom: -2px;
+    text-align: center;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border: 1px solid #d1d1d1;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .talk-block .event {
+        margin-top: 0;
+        float: left;
+        width: 50%;
+    }
+}
+
+.talk-block .event {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .talk-block .practical .commit-holder {
+        right: 66.66667%;
+        float: left;
+        width: 33.33333%;
+    }
+}
+.talk-block .practical .commit-holder {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 11px;
 }
 
