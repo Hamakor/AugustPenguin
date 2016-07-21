@@ -6,7 +6,7 @@ body {
   font-family: arial, sans-serif;
   margin: 5em auto 0 auto;
   direction: rtl;
-  text-align: center;
+  text-align: left;
   padding: 0 50px;
 }
 
@@ -84,6 +84,136 @@ body > .container > header > nav > ul > li > a {
 
 .location dd{
   margin: 0 0 5px;
+}
+
+.commit {
+    padding: 16px 0;
+}
+
+.commit .dot {
+    position: absolute;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #dfdfdf;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+    margin-top: 35px;
+}
+
+.commit .empty {
+    height: 50px;
+}
+
+.commit .first::after {
+    height: 50%;
+    text-align: center;
+}
+
+.commit.last::after {
+     height: 50%;
+ }
+
+.event-full .commit {
+    text-align: center;
+}
+
+.commit.empty::after {
+    -webkit-transform: translateX(-50%);
+    transform: translate(-50%);
+}
+.commit::after {
+    margin-top: 20px;
+    position: absolute;
+    z-index: -1000;
+    width: 10px;
+    height: 100%;
+    content: " ";
+    background-color: #dfdfdf;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+    left: 50%;
+}
+
+.event_full {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+
+.event-full.general .title {
+    padding-top: 10px;
+}
+
+.event-full .title {
+    float: left;
+    width: 41.66667%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.event-full h1, .event-full h2, .event-full h3 {
+    margin-top: 0.7em;
+}
+
+.event-full h2 {
+    font-size: 25px;
+}
+
+.event-full::before, .event-full::after {
+    content: " ";
+    display: table;
+}
+
+.event-full::after {
+    clear: both;
+}
+
+.event-full.general .talk-description {
+    padding-top: 10px;
+}
+
+.event-full .keynote-text {
+    font-size: 16px;
+}
+
+.event-full .talk-description {
+    left: 16.66667%;
+    float: left;
+    width: 41.66667%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.event-full .talk-description, .event-full-rtl .talk-description, .talk-block .master .talk-description, .talk-block .practical .talk-description {
+    padding-top: 20px;
+}
+
+.talk-description {
+    max-height: 100px;
+    padding: 16px 0;
+}
+.event-full h1, .event-full h2, .event-full h3 {
+    margin-top: 0.7em;
+}
+
+.event-full small {
+    right: 10px;
+}
+.event-full small {
+    position: absolute;
+    display: block;
+    margin-top: -5px;
+    color: #d1d1d1;
+}
+small {
+    font-size: 80%;
 }
 
 #extended {
