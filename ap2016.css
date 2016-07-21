@@ -6,7 +6,7 @@ body {
   font-family: arial, sans-serif;
   margin: 5em auto 0 auto;
   direction: rtl;
-  text-align: left;
+  text-align: center;
   padding: 0 50px;
 }
 
@@ -190,6 +190,7 @@ body > .container > header > nav > ul > li > a {
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: left;
 }
 .event-full .talk-description, .event-full-rtl .talk-description, .talk-block .master .talk-description, .talk-block .practical .talk-description {
     padding-top: 20px;
