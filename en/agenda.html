@@ -11,8 +11,10 @@
     <meta property="og:image" content="//ap.hamakor.org.il/2016/ap_button.png" />
     <meta property="og:title" content="The annual free and open source software convention" />
     <meta property="og:site_name" content="August Penguin" />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <title>August Penguin 2016 - Agenda</title>
     <link rel="stylesheet"    href="../ap2016.css"    type="text/css"  />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,7 +52,7 @@
     </div>
 
     <div class="event-full general" style="margin-top: 5%;">
-        <h2 class="title">Arrival + Snacks <small>9:00</small></h2>
+        <h2 class="title">Arrival + Snacks <small>8:30</small></h2>
         <div class="talk-description">
             <p>Grab your swag and coffee. <br>
             Meet our sponsors and get ready for a day full of awesome talks!
@@ -61,13 +63,13 @@
         </div>
     </div>
     <div class="event-full general">
-        <h2 class="title">The grand opening <small>9:30</small></h2>
+        <h2 class="title">The grand opening <small>9:00</small></h2>
         <div class="talk-description">
             <p>Welcome to <strong> August Penguin 2016</strong>! <br>
                 Proud to bring great talks and speakers, both from Israel and abroad.
             </p>
         </div>
-        <div class="commit empty">
+        <div class="commit empty last">
             <div class="dot"></div>
         </div>
     </div>
@@ -75,7 +77,7 @@
     <div class="event-full">
         <h2 class="title">Keynote<br>
             <span class="keynote-text">
-                <a href="/2016/about/speakers.html#2cb2d17d448c3d84">Some keynote here</a> <small>9:45</small>
+                <a data-toggle="modal" href="#keynote">Some keynote here</a> <small>9:15</small>
             </span>
         </h2>
         <div class="talk-description">
@@ -87,25 +89,81 @@
         </div>
     </div>
     <div class="event-full general">
-        <h2 class="title">Break <small>11:15</small></h2>
+        <h2 class="title">Break <small>10:00</small></h2>
         <div class="talk-description">
             <p>
                 <br> Moving into two separate tracks.
             </p>
         </div>
-        <div class="commit empty">
+        <div class="commit empty last">
             <div class="dot"></div>
         </div>
     </div>
     <div class="branch-description">
         <div class="branch-name">
-            <div class="master">dev &amp; core track</div>
+            <div class="master">Track 1</div>
         </div>
         <div class="branch in">
             <img src="../images/branch-in.png">
         </div>
         <div class="branch-name">
-            <div class="practical">Data, SCI &amp; ML track</div>
+            <div class="practical">Track 2</div>
+        </div>
+    </div>
+
+    <div class="talk-block">
+        <div class="event master">
+            <div class="talk-description">
+                <h3 class="speaker">Another speaker</h3>
+                <div class="misc"><small>10:30</small></div>
+                <p>
+                    <a data-toggle="modal" href="#s11030">Google vs. Oracle: progress of the lawsuit and it's effects on open source projects</a>
+                </p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
+        </div>
+        <div class="event practical">
+            <div class="talk-description">
+                <h3 class="speaker">Speaker 2</h3>
+                <div class="misc"><small>10:30</small></div>
+                <p><a data-toggle="modal" href="#s21030">Empower the virtual infrastructure management capabilities through open source products</a></p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="talk-block">
+        <div class="event master">
+            <div class="talk-description">
+                <h3 class="speaker">Another speaker</h3>
+                <div class="misc"><small>11:00</small></div>
+                <p><a data-toggle="modal" href="#s11100">The Free Three: Data, Software and Knowledge</a></p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
+        </div>
+        <div class="event practical">
+            <div class="talk-description">
+                <h3 class="speaker">Speaker 2</h3>
+                <div class="misc"><small>11:00</small></div>
+                <p><a data-toggle="modal" href="#s21100">TRex- fast open source traffic generation tool</a></p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -114,7 +172,7 @@
             <div class="talk-description">
                 <h3 class="speaker">Another speaker</h3>
                 <div class="misc"><small>11:30</small></div>
-                <p><a href="/2016/about/speakers.html#a884c582c74284b4">bla bla bla</a></p>
+                <p><a data-toggle="modal" href="#s11130">GNU's textutils as a power tool for big data analysis</a></p>
             </div>
             <div class="commit-holder">
                 <div class="commit">
@@ -126,7 +184,7 @@
             <div class="talk-description">
                 <h3 class="speaker">Speaker 2</h3>
                 <div class="misc"><small>11:30</small></div>
-                <p><a href="/2016/about/speakers.html#027d6a0e6e90a387">Network Analysis</a></p>
+                <p><a data-toggle="modal" href="#s21130">Hello, World! I am an app inside a container</a></p>
             </div>
             <div class="commit-holder">
                 <div class="commit">
@@ -136,5 +194,373 @@
         </div>
     </div>
 
+    <div class="branch-description">
+        <div class="branch-name"></div>
+        <div class="branch out">
+            <img src="../images/branch-in.png">
+        </div>
+        <div class="branch-name"></div>
+    </div>
+
+    <div class="event-full general">
+        <h2 class="title">Break <small>12:00</small></h2>
+        <div class="talk-description">
+            <p>
+                <br> Cofee break.
+            </p>
+        </div>
+        <div class="commit empty last">
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <div class="branch-description">
+        <div class="branch-name"></div>
+        <div class="branch in">
+            <img src="../images/branch-in.png">
+        </div>
+        <div class="branch-name"></div>
+    </div>
+
+    <div class="talk-block">
+        <div class="event master">
+            <div class="talk-description">
+                <h3 class="speaker">Another speaker</h3>
+                <div class="misc"><small>12:15</small></div>
+                <p><a data-toggle="modal" href="#s11215">Datable SQL</a></p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
+        </div>
+        <div class="event practical">
+            <div class="talk-description">
+                <h3 class="speaker">Speaker 2</h3>
+                <div class="misc"><small>12:15</small></div>
+                <p><a data-toggle="modal" href="#s21215">Offensive cyber automation</a></p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="talk-block">
+        <div class="event master">
+            <div class="talk-description">
+                <h3 class="speaker">Another speaker</h3>
+                <div class="misc"><small>12:45</small></div>
+                <p><a data-toggle="modal" href="#s11245">Open source and the MEAN stack. The rise of JavaScript frameworks</a></p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
+        </div>
+        <div class="event practical">
+            <div class="talk-description">
+                <h3 class="speaker">Speaker 2</h3>
+                <div class="misc"><small>12:45</small></div>
+                <p><a data-toggle="modal" href="#s21245">Open vSwitch introduction</a></p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="talk-block">
+        <div class="event master">
+            <div class="talk-description">
+                <h3 class="speaker">Another speaker</h3>
+                <div class="misc"><small>13:15</small></div>
+                <p><a data-toggle="modal" href="#s11315">How to build a self adjasted OS to raspberry pi that one can get code contributions to</a></p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
+        </div>
+        <div class="event practical">
+            <div class="talk-description">
+                <h3 class="speaker">Speaker 2</h3>
+                <div class="misc"><small>13:15</small></div>
+                <p><a data-toggle="modal" href="#s21315">TBD</a></p>
+            </div>
+            <div class="commit-holder">
+                <div class="commit">
+                    <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="branch-description">
+        <div class="branch-name"></div>
+        <div class="branch out">
+            <img src="../images/branch-in.png">
+        </div>
+        <div class="branch-name"></div>
+    </div>
+
+    <div class="event-full">
+        <h2 class="title">Ending event<br>
+            <span class="keynote-text">
+                <a data-toggle="modal" href="#conclusion">Conclusion and start working on August penguin 2017</a> <small>13:45</small>
+            </span>
+        </h2>
+        <div class="talk-description">
+            <div class="speaker">Some speaker</div>
+        </div>
+        <div class="commit last user">
+            <img src="../images/coffee.png" alt="Photo of speaker" class="avatar">
+        </div>
+    </div>
+
+    <div id="keynote" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Keynote lecture</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s11030" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Google vs. Oracle: progress of the lawsuit and it's effects on open source projects</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s21030" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Empower the virtual infrastructure management capabilities through open source products</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s11100" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">The Free Three: Data, Software and Knowledge</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s21100" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">TRex- fast open source traffic generation tool</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s11130" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">GNU's textutils as a power tool for big data analysis</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s21130" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Hello, World! I am an app inside a container</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s11215" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Datable SQL</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s21215" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Offensive cyber automation</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s11245" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Open source and the MEAN stack. The rise of JavaScript frameworks</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s21245" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Open vSwitch introduction</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s11315" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">How to build a self adjasted OS to raspberry pi that one can get code contributions to</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="s21315" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">TBD</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div id="conclusion" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Conclusion and start working on August penguin 2017</h4>
+          </div>
+          <div class="modal-body">
+            <p>One fine body&hellip;</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </body>
 </html>

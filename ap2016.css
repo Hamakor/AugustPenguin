@@ -100,7 +100,6 @@ body > .container > header > nav > ul > li > a {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: left;
-    margin-top: 35px;
 }
 
 .commit .empty {
@@ -128,8 +127,9 @@ body > .container > header > nav > ul > li > a {
     margin-top: 0px;
     position: absolute;
     z-index: -1000;
-    width: 10px;
-    height: 30%;
+    width: 12px;
+    height: 100%;
+    max-height: 136px;
     content: " ";
     background-color: #dfdfdf;
     -webkit-transform: translate(-50%);
@@ -207,11 +207,22 @@ body > .container > header > nav > ul > li > a {
 }
 .event-full .talk-description, .event-full-rtl .talk-description, .talk-block .master .talk-description, .talk-block .practical .talk-description {
     padding-top: 20px;
+    display: inline-block;
 }
+
+.talk-block .master .talk-description {
+    padding-left: 280px;
+}
+
+.talk-block .practical .talk-description {
+    padding-left: 150px;
+}
+
 
 .talk-description {
     max-height: 100px;
     padding: 16px 0;
+    width: 80%;
 }
 .event-full h1, .event-full h2, .event-full h3 {
     margin-top: 0.7em;
@@ -455,6 +466,7 @@ h1, h2 {
     margin-left: -10px;
     margin-right: -10px;
     vertical-align: bottom;
+    margin-top: 20px;
 }
 
 .branch-description:before, .branch-description:after {
@@ -500,8 +512,21 @@ h1, h2 {
 }
 .branch {
     height: 103px;
-    margin-bottom: -2px;
     text-align: center;
+}
+
+.branch.in {
+    margin-bottom: 30px;
+}
+
+.branch.out {
+    margin-top: 40px;
+    transform: rotate(180deg);
+    background-size: 80%;
+}
+
+.branch img {
+    width: 35%;
 }
 
 @media (min-width: 768px) {
@@ -529,15 +554,24 @@ h1, h2 {
 
 .talk-block .event {
     position: relative;
+    height: 140px;
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 15px;
+}
+
+.commit-holder {
+    position: relative;
 }
 
 @media (min-width: 768px) {
     .talk-block .practical .commit-holder {
-        right: 80%;
+        right: 80.2%;
+        float: right;
+        width: 20%;
+    }
+
+    .talk-block .master .commit-holder {
         float: right;
         width: 20%;
     }
@@ -549,3 +583,6 @@ h1, h2 {
     padding-left: 10px;
 }
 
+.misc small {
+    text-align: left;
+}
