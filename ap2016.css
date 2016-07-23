@@ -86,157 +86,6 @@ body > .container > header > nav > ul > li > a {
   margin: 0 0 5px;
 }
 
-.commit {
-    padding: 16px 0;
-}
-
-.commit .dot {
-    position: absolute;
-    left: 50%;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #dfdfdf;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: left;
-}
-
-.commit .empty {
-    height: 50px;
-}
-
-.commit .first::after {
-    height: 50%;
-    text-align: center;
-}
-
-.commit.last::after {
-     height: 50%;
- }
-
-.event-full .commit {
-    text-align: center;
-}
-
-.commit.empty::after {
-    -webkit-transform: translateX(-50%);
-    transform: translate(-50%);
-}
-.commit::after {
-    margin-top: 0px;
-    position: absolute;
-    z-index: -1000;
-    width: 12px;
-    height: 100%;
-    max-height: 136px;
-    content: " ";
-    background-color: #dfdfdf;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%);
-    left: 50%;
-}
-
-@media (min-width: 768px) {
-    .event-full .commit {
-        right: 41.66667%;
-        float: left;
-        width: 16.66667%;
-    }
-}
-
-.event-full .commit {
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: center;
-}
-
-.event-full .user {
-    position: relative;
-}
-
-.event-full.general .title {
-    padding-top: 10px;
-}
-
-.event-full .title {
-    float: left;
-    width: 41.66667%;
-    position: relative;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: right;
-}
-
-.event-full h1, .event-full h2, .event-full h3 {
-    margin-top: 0.7em;
-}
-
-.event-full h2 {
-    font-size: 25px;
-}
-
-.event-full::before, .event-full::after {
-    content: " ";
-    display: table;
-}
-
-.event-full::after {
-    clear: both;
-}
-
-.event-full.general .talk-description {
-    padding-top: 10px;
-}
-
-.event-full .keynote-text {
-    font-size: 16px;
-}
-
-.event-full .talk-description {
-    left: 16.66667%;
-    float: left;
-    width: 41.66667%;
-    position: relative;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: left;
-}
-.event-full .talk-description, .event-full-rtl .talk-description, .talk-block .master .talk-description, .talk-block .practical .talk-description {
-    padding-top: 20px;
-    display: inline-block;
-}
-
-.talk-block .master .talk-description {
-    padding-left: 280px;
-}
-
-.talk-block .practical .talk-description {
-    padding-left: 150px;
-}
-
-
-.talk-description {
-    max-height: 100px;
-    padding: 16px 0;
-    width: 80%;
-}
-.event-full h1, .event-full h2, .event-full h3 {
-    margin-top: 0.7em;
-}
-
-.event-full small {
-    right: 10px;
-}
-.event-full small {
-    position: absolute;
-    display: block;
-    margin-top: -5px;
-    color: #d1d1d1;
-}
 small {
     font-size: 80%;
 }
@@ -462,127 +311,408 @@ h1, h2 {
   }
 }
 
-.branch-description {
-    margin-left: -10px;
-    margin-right: -10px;
-    vertical-align: bottom;
-    margin-top: 20px;
-}
+.event-full .talk-description, .event-full-rtl .talk-description, .talk-block .master .talk-description, .talk-block .practical .talk-description {
+  padding: 0; }
+  @media (min-width: 768px) {
+    .event-full .talk-description, .event-full-rtl .talk-description, .talk-block .master .talk-description, .talk-block .practical .talk-description {
+      padding-top: 20px; } }
 
-.branch-description:before, .branch-description:after {
+@media (min-width: 480px) {
+  .page-talks h1 {
+    text-align: center; }
+  .page-talks h3 {
+    font-size: 16px; } }
+
+.event-full {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .event-full:before, .event-full:after {
     content: " ";
-    display: table;
-}
-
-.branch-description:after {
-    clear: both;
-}
-
-@media (min-width: 768px) {
-    .branch-description .branch-name {
+    display: table; }
+  .event-full:after {
+    clear: both; }
+  .event-full .title {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 768px) {
+      .event-full .title {
         float: left;
-        width: 33.33333%;
-    }
-}
-
-.branch-description .branch-name {
-        position: relative;
-        min-height: 1px;
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 100px;
-        font-size: 24px;
-}
-
-.branch-description .master {
-    right: 10px;
-}
-
-.branch-description .master, .branch-description .practical {
+        width: 41.66667%; } }
+  .event-full .keynote-text {
+    font-size: 16px; }
+  .event-full small {
     position: absolute;
-    bottom: 0;
-}
+    display: block;
+    margin-top: -5px;
+    color: #d1d1d1; }
+    @media (min-width: 768px) {
+      .event-full small {
+        right: 10px; } }
+  @media (min-width: 768px) {
+    .event-full.general .title {
+      padding-top: 10px; } }
 
-.branch-description .branch {
+@media (min-width: 768px) and (min-width: 768px) {
+  .event-full.general .talk-description {
+    padding-top: 10px; } }
+  @media (min-width: 768px) {
+    .event-full .title {
+      text-align: right; }
+      .event-full .title.amber, .event-full .title.russell {
+        margin-bottom: 0; }
+    .event-full h1,
+    .event-full h2,
+    .event-full h3 {
+      margin-top: 0.7em; } }
+  .event-full .talk-description {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 768px) {
+      .event-full .talk-description {
+        float: left;
+        width: 41.66667%; } }
+    @media (min-width: 768px) {
+      .event-full .talk-description {
+        left: 16.66667%; } }
+  .event-full .commit {
     position: relative;
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
-    left: -1px;
-}
-.branch {
-    height: 103px;
-    text-align: center;
-}
-
-.branch.in {
-    margin-bottom: 30px;
-}
-
-.branch.out {
-    margin-top: 40px;
-    transform: rotate(180deg);
-    background-size: 80%;
-}
-
-.branch img {
-    width: 35%;
-}
-
-@media (min-width: 768px) {
-    .branch-description .branch {
+    text-align: center; }
+    @media (min-width: 768px) {
+      .event-full .commit {
         float: left;
-        width: 33.33333%;
-    }
-}
+        width: 16.66667%; } }
+    @media (min-width: 768px) {
+      .event-full .commit {
+        right: 41.66667%; } }
+
+.event-full-rtl {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .event-full-rtl:before, .event-full-rtl:after {
+    content: " ";
+    display: table; }
+  .event-full-rtl:after {
+    clear: both; }
+  .event-full-rtl .title {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 768px) {
+      .event-full-rtl .title {
+        float: right;
+        width: 41.66667%; } }
+  .event-full-rtl small {
+    position: absolute;
+    display: block;
+    margin-top: -5px;
+    color: #d1d1d1; }
+    @media (min-width: 768px) {
+      .event-full-rtl small {
+        left: 10px; } }
+  @media (min-width: 768px) {
+    .event-full-rtl.general .title {
+      padding-top: 10px; } }
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .event-full-rtl.general .talk-description {
+    padding-top: 10px; } }
+  @media (min-width: 768px) {
+    .event-full-rtl .title {
+      text-align: left; }
+      .event-full-rtl .title.amber, .event-full-rtl .title.russell {
+        margin-bottom: 0; }
+    .event-full-rtl h1,
+    .event-full-rtl h2,
+    .event-full-rtl h3 {
+      margin-top: 0.7em; } }
+  .event-full-rtl .talk-description {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    @media (min-width: 768px) {
+      .event-full-rtl .talk-description {
+        float: right;
+        width: 41.66667%; } }
+    @media (min-width: 768px) {
+      .event-full-rtl .talk-description {
+        right: 16.66667%; } }
+  .event-full-rtl .commit-rtl {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .event-full-rtl .commit-rtl {
+        float: right;
+        width: 16.66667%; } }
+    @media (min-width: 768px) {
+      .event-full-rtl .commit-rtl {
+        left: 41.66667%; } }
+
+.talk-block {
+  margin-left: -10px;
+  margin-right: -10px; }
+  .talk-block:before, .talk-block:after {
+    content: " ";
+    display: table; }
+  .talk-block:after {
+    clear: both; }
+  .talk-block h3 {
+    margin-bottom: 0.2em; }
+    @media (min-width: 768px) {
+      .talk-block h3 {
+        margin-top: -0;
+        margin-bottom: 0; } }
+  .talk-block .event {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 15px; }
+    @media (min-width: 768px) {
+      .talk-block .event {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .talk-block .event {
+        margin-top: 0; } }
+  @media (min-width: 768px) {
+    .talk-block .master {
+      text-align: right; }
+      .talk-block .master .speaker {
+        padding-left: 30px; } }
+  .talk-block .master .talk-description {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 0; }
+    @media (min-width: 768px) {
+      .talk-block .master .talk-description {
+        float: left;
+        width: 66.66667%; } }
+  .talk-block .master .commit-holder {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-right: 11px; }
+    @media (min-width: 768px) {
+      .talk-block .master .commit-holder {
+        float: left;
+        width: 33.33333%; } }
+  .talk-block .practical .talk-description {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 0; }
+    @media (min-width: 768px) {
+      .talk-block .practical .talk-description {
+        float: left;
+        width: 66.66667%; } }
+    @media (min-width: 768px) {
+      .talk-block .practical .talk-description {
+        left: 33.33333%; } }
+  .talk-block .practical .commit-holder {
+    position: relative;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-left: 11px; }
+    @media (min-width: 768px) {
+      .talk-block .practical .commit-holder {
+        float: left;
+        width: 33.33333%; } }
+    @media (min-width: 768px) {
+      .talk-block .practical .commit-holder {
+        right: 66.66667%; } }
+
+.talk-description {
+  max-height: 100px;
+  padding: 16px 0; }
+  .talk-description .speaker {
+    color: #1e5493;
+    font-weight: bold; }
+  .talk-description p {
+    margin-top: 5px;
+    margin-bottom: 0; }
+
+.misc {
+  color: #b8b8b8; }
+  .misc small {
+    margin-right: 0.7em; }
+  @media (min-width: 992px) {
+    .misc .track {
+      display: none; } }
+  @media (min-width: 768px) {
+    .misc {
+      text-align: right; }
+      .practical .misc, .page-workshops .misc {
+        text-align: left; } }
+  .misc .social:last-child {
+    margin-right: 0; }
 
 .avatar {
-    width: 96px;
-    height: 96px;
-    border: 1px solid #d1d1d1;
+  width: 96px;
+  height: 96px;
+  border: 1px solid #d1d1d1;
+  border-radius: 50%;
+  background-color: #fff; }
+
+.commit {
+  padding: 16px 0; }
+  .commit .dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    background-color: #fff;
-}
+    background-color: #dfdfdf;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .commit.empty {
+    height: 96px; }
+    .commit.empty:after {
+      -webkit-transform: translateX(-5px);
+      transform: translateX(-5px); }
+  .commit.first:after {
+    top: 50%;
+    height: 50%; }
+  .commit.last:after {
+    height: 50%; }
+  .commit:after {
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+    width: 10px;
+    height: 100%;
+    content: " ";
+    background-color: #dfdfdf;
+    -webkit-transform: translateX(-53px);
+    transform: translateX(-53px); }
 
-@media (min-width: 768px) {
-    .talk-block .event {
-        margin-top: 0;
-        float: left;
-        width: 50%;
-    }
-}
+.commit-rtl {
+  padding: 16px 0; }
+  .commit-rtl .dot {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #dfdfdf;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%); }
+  .commit-rtl.empty {
+    height: 96px; }
+    .commit-rtl.empty:after {
+      -webkit-transform: translateX(5px);
+      transform: translateX(5px); }
+  .commit-rtl.first:after {
+    top: 50%;
+    height: 50%; }
+  .commit-rtl.last:after {
+    height: 50%; }
+  .commit-rtl:after {
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+    width: 10px;
+    height: 120%;
+    content: " ";
+    background-color: #dfdfdf;
+    -webkit-transform: translateX(53px);
+    transform: translateX(53px); }
 
-.talk-block .event {
+.branch-description {
+  margin-left: -10px;
+  margin-right: -10px;
+  vertical-align: bottom; }
+  .branch-description:before, .branch-description:after {
+    content: " ";
+    display: table; }
+  .branch-description:after {
+    clear: both; }
+  .branch-description .branch-name {
     position: relative;
-    height: 140px;
     min-height: 1px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.commit-holder {
-    position: relative;
-}
-
-@media (min-width: 768px) {
-    .talk-block .practical .commit-holder {
-        right: 80.2%;
-        float: right;
-        width: 20%;
-    }
-
-    .talk-block .master .commit-holder {
-        float: right;
-        width: 20%;
-    }
-}
-.talk-block .practical .commit-holder {
+    height: 100px;
+    font-size: 24px; }
+    @media (min-width: 768px) {
+      .branch-description .branch-name {
+        float: left;
+        width: 33.33333%; } }
+  .branch-description .branch {
     position: relative;
     min-height: 1px;
-    padding-right: 11px;
     padding-left: 10px;
+    padding-right: 10px;
+    left: -1px; }
+    @media (min-width: 768px) {
+      .branch-description .branch {
+        float: left;
+        width: 33.33333%; } }
+  .branch-description .master,
+  .branch-description .practical {
+    position: absolute;
+    bottom: 0; }
+  .branch-description .master {
+    right: 10px; }
+  .branch-description .practical {
+    left: 4px; }
+
+.branch {
+  height: 103px;
+  margin-bottom: -2px;
+  text-align: center; }
+  .branch.in img {
+    position: relative;
+    left: 1px; }
+
+.container.schedule {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+.container.schedule:before, .container.schedule:after {
+  content: " ";
+  display: table; }
+.container.schedule:after {
+  clear: both; }
+@media (min-width: 768px) {
+  .container.schedule {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container.schedule {
+    width: 960px; } }
+@media (min-width: 1200px) {
+  .container.schedule {
+    width: 960px; } }
+@media (max-width: 767px){
+  .hidden-xs, .branch, .branch-description, .commit, .commit-rtl, .commit-holder, .title br {
+      display: none !important;
+  }
 }
 
-.misc small {
-    text-align: left;
+@media (max-width: 992px){
+  .talk-block .commit:after{
+    left: 90.5%;
+  }
 }
+
