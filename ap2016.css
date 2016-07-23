@@ -324,7 +324,7 @@ h1, h2 {
     font-size: 16px; } }
 
 .event-full {
-  margin-left: -10px;
+  margin-left: -11px;
   margin-right: -10px; }
   .event-full:before, .event-full:after {
     content: " ";
@@ -724,4 +724,8 @@ h1, h2 {
 }
 .modal-body {
     text-align: start;
+}
+
+.agenda-he p, .agenda-he h4, .agenda-he h3{
+  direction: rtl;
 }
