@@ -500,7 +500,7 @@ h1, h2 {
     @media (min-width: 768px) {
       .talk-block .master .talk-description {
         float: left;
-        width: 66.66667%; } }
+        width: 74.5%; } }
   .talk-block .master .commit-holder {
     position: relative;
     min-height: 1px;
@@ -510,7 +510,7 @@ h1, h2 {
     @media (min-width: 768px) {
       .talk-block .master .commit-holder {
         float: left;
-        width: 33.33333%; } }
+        width: 25.5%; } }
   .talk-block .practical .talk-description {
     position: relative;
     min-height: 1px;
@@ -523,7 +523,7 @@ h1, h2 {
         width: 66.66667%; } }
     @media (min-width: 768px) {
       .talk-block .practical .talk-description {
-        left: 33.33333%; } }
+        left: 25%; } }
   .talk-block .practical .commit-holder {
     position: relative;
     min-height: 1px;
@@ -533,7 +533,7 @@ h1, h2 {
     @media (min-width: 768px) {
       .talk-block .practical .commit-holder {
         float: left;
-        width: 33.33333%; } }
+        width: 25.4%; } }
     @media (min-width: 768px) {
       .talk-block .practical .commit-holder {
         right: 66.66667%; } }
@@ -584,7 +584,7 @@ h1, h2 {
     transform: translate(-50%, -50%); }
   .commit.empty {
     text-align: center;
-    height: 96px; }
+    height: 110px; }
     .commit.empty:after {
       -webkit-transform: translateX(-5px);
       transform: translateX(-5px); }
@@ -617,7 +617,7 @@ h1, h2 {
     -webkit-transform: translate(50%, -50%);
     transform: translate(50%, -50%); }
   .commit-rtl.empty {
-    height: 96px; }
+    height: 110px; }
     .commit-rtl.empty:after {
       -webkit-transform: translateX(5px);
       transform: translateX(5px); }
@@ -681,13 +681,9 @@ h1, h2 {
   margin-bottom: -2px;
   text-align: center; }
   .branch.in img {
-    width: 63%;
-    height: 103px;
     position: relative;
     left: 1px; }
   .branch.out img {
-    width: 63%;
-    height: 103px;
     position: relative;
     left: 1px; }
 
@@ -717,13 +713,15 @@ h1, h2 {
       display: none !important;
   }
 }
-
 @media (max-width: 992px){
-  .talk-block .commit:after{
-    left: 90.5%;
+  .talk-block .practical .commit-holder {
+    right: 62.9%;
+  }
+  .talk-block .master .commit-holder {
+    float: left;
+    width: 17.8%;
   }
 }
-
 .modal-body {
     text-align: start;
 }
