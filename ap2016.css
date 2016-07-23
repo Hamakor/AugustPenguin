@@ -583,6 +583,7 @@ h1, h2 {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
   .commit.empty {
+    text-align: center;
     height: 96px; }
     .commit.empty:after {
       -webkit-transform: translateX(-5px);
@@ -680,6 +681,13 @@ h1, h2 {
   margin-bottom: -2px;
   text-align: center; }
   .branch.in img {
+    width: 63%;
+    height: 103px;
+    position: relative;
+    left: 1px; }
+  .branch.out img {
+    width: 63%;
+    height: 103px;
     position: relative;
     left: 1px; }
 
@@ -716,3 +724,6 @@ h1, h2 {
   }
 }
 
+.modal-body {
+    text-align: start;
+}
