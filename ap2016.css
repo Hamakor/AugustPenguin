@@ -299,7 +299,7 @@ h1, h2 {
 }
 
 .gh-ribbon{
-  position: fixed; 
+  position: fixed;
   top: 0;
   border: 0;
   z-index: 10000;
@@ -726,6 +726,10 @@ h1, h2 {
     text-align: start;
 }
 
-.agenda-he p, .agenda-he h4, .agenda-he h3{
+.agenda-he p, .agenda-he h4, .agenda-he h3, .agenda-he .modal-dialog{
   direction: rtl;
+}
+
+.agenda nav ul{
+  margin-top: 1em;
 }
