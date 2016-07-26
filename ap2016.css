@@ -733,3 +733,9 @@ h1, h2 {
 .agenda nav ul{
   margin-top: 1em;
 }
+
+.reg-iframe{
+  width: 80%;
+  max-width: 780px;
+  height: 420px;
+}
