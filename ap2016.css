@@ -86,10 +86,6 @@ body > .container > header > nav > ul > li > a {
   margin: 0 0 5px;
 }
 
-small {
-    font-size: 80%;
-}
-
 #extended {
   font-size: 80%;
 }
@@ -470,8 +466,8 @@ h1, h2 {
   .talk-block h3 {
     margin-bottom: 0.2em; }
     @media (min-width: 768px) {
-      .talk-block h3 {
-        margin-top: -0;
+      .talk-block h3, .event-full h3 {
+        margin-top: 0;
         margin-bottom: 0; } }
   .talk-block .event {
     position: relative;
@@ -550,8 +546,6 @@ h1, h2 {
 
 .misc {
   color: #b8b8b8; }
-  .misc small {
-    margin-right: 0.7em; }
   @media (min-width: 992px) {
     .misc .track {
       display: none; } }
