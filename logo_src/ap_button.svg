@@ -8740,16 +8740,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.83701587"
-     inkscape:cx="-187.2056"
-     inkscape:cy="223.59701"
+     inkscape:cx="58.281148"
+     inkscape:cy="75.451671"
      inkscape:document-units="px"
-     inkscape:current-layer="g5580-0"
+     inkscape:current-layer="g5303"
      showgrid="false"
      inkscape:snap-grids="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="873"
-     inkscape:window-x="1357"
-     inkscape:window-y="-9"
+     inkscape:window-width="1366"
+     inkscape:window-height="704"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:snap-object-midpoints="false"
      inkscape:snap-center="false"
@@ -9941,26 +9941,30 @@
              rx="3.0052037"
              ry="3.1819806" />
         </g>
-        <text
-           transform="translate(1.6895899,2)"
-           id="text4495"
-           style="font-style:normal;font-weight:normal;font-size:34.81809235px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.97647059;stroke:none"
-           xml:space="preserve"
-           inkscape:transform-center-y="91.959558"
-           inkscape:transform-center-x="13.904558"><textPath
-             id="textPath4497"
-             xlink:href="#path5923"
-             style="font-family:sans-serif">כנס התכנה החופשית השנתי בישראל   </textPath></text>
-        <text
-           inkscape:transform-center-x="13.904558"
-           inkscape:transform-center-y="91.959558"
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:34.81809235px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f2c00c;fill-opacity:0.97647059;stroke:#f2c00c;stroke-width:1.47976899;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-           id="text5634"
-           transform="translate(1.6895899)"><textPath
-             xlink:href="#path5923"
-             id="textPath4493"
-             style="font-family:sans-serif">כנס התכנה החופשית השנתי בישראל   </textPath></text>
+        <g
+           id="g1543"
+           transform="rotate(-7.5962122,-836.29945,472.8568)">
+          <text
+             inkscape:transform-center-x="13.904558"
+             inkscape:transform-center-y="91.959558"
+             xml:space="preserve"
+             style="font-style:normal;font-weight:normal;font-size:34.81809235px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.97647059;stroke:none"
+             id="text4495"
+             transform="translate(1.6895899,162)"><textPath
+               style="font-family:sans-serif"
+               xlink:href="#path5923"
+               id="textPath4497">כנס התכנה החופשית השנתי בישראל   </textPath></text>
+          <text
+             transform="translate(1.6895899,160)"
+             id="text5634"
+             style="font-style:normal;font-weight:normal;font-size:34.81809235px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#f2c00c;fill-opacity:0.97647059;stroke:#f2c00c;stroke-width:1.47976899;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             xml:space="preserve"
+             inkscape:transform-center-y="91.959558"
+             inkscape:transform-center-x="13.904558"><textPath
+               style="font-family:sans-serif"
+               id="textPath4493"
+               xlink:href="#path5923">כנס התכנה החופשית השנתי בישראל   </textPath></text>
+        </g>
       </g>
       <circle
          transform="matrix(-0.5967659,0.11992009,-0.11992009,-0.5967659,646.54618,526.2291)"
