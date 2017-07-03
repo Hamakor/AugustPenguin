@@ -72,6 +72,15 @@ body > .container > header > nav > ul > li > a {
 #content table {border-collapse:collapse; margin: auto;}
 #content table td, #content table th {border: 1px solid gray; max-width: 20em;}
 
+.tracks {
+    display: flex;
+    flex-direction: column;
+}
+.track  {
+    margin: 0 auto;
+}
+.track-title, .track-icon { display: table-cell }
+
 #sponsorship {
   margin-top: 25px;
   min-height: 100%;
