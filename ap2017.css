@@ -72,14 +72,46 @@ body > .container > header > nav > ul > li > a {
 #content table {border-collapse:collapse; margin: auto;}
 #content table td, #content table th {border: 1px solid gray; max-width: 20em;}
 
-.tracks {
-    display: flex;
-    flex-direction: column;
+/*
+#tracklist.container {
+    max-width: 1000px
 }
-.track  {
-    margin: 0 auto;
+*/
+#tracklist .track {
+    max-width: 250px
 }
-.track-title, .track-icon { display: table-cell }
+
+#tracklist .track img {
+    max-width: 100%
+}
+
+#tracklist h3 {
+  font-size: 18px;
+  color: #1e5493;
+  text-align: center;
+}
+
+/* centered columns styles - see http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-centered-rtl {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:right;
+    /* inline-block space fix */
+    margin-right:4px;
+}
+/**/
 
 #sponsorship {
   margin-top: 25px;
