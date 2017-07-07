@@ -295,6 +295,12 @@ h1, h2 {
   margin-top: 40px;
 }
 
+.track-img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100px;
+}
+
 .aug-img {
   display: inline-block;
   vertical-align: middle;
@@ -325,6 +331,11 @@ h1, h2 {
   vertical-align: middle;
   font-size: 64px;
   text-align: start;
+}
+
+.inner-logo-sec h2 {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .inner-logo-sec div {
@@ -758,6 +769,10 @@ h1, h2 {
   }
 }
 .modal-body {
+    text-align: start;
+}
+
+#tracks-content .track {
     text-align: start;
 }
 
