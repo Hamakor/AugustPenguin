@@ -272,6 +272,10 @@ h1, h2 {
   margin-top: 40px;
 }
 
+.track {
+  padding: 10px 0;
+}
+
 .track-img {
   display: inline-block;
   vertical-align: middle;
