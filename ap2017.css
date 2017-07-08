@@ -1,6 +1,6 @@
 body {
   font-family: arial, sans-serif;
-  margin: 5em auto 0 auto;
+  margin: 3.5em auto 0 auto;
   direction: rtl;
   text-align: center;
   font-size: 1.8em;
@@ -62,6 +62,10 @@ body > .container > header > nav > ul > li > a {
   float: right;
   width: 45%;
   margin: 0 2%;
+}
+
+#content {
+  padding: 5em;
 }
 
 #content a[name] { position: relative; top: -100px;}
@@ -271,7 +275,8 @@ h1, h2 {
 .track-img {
   display: inline-block;
   vertical-align: middle;
-  max-height: 100px;
+  max-height: 70px;
+  max-width: 90px;
 }
 
 .aug-img {
