@@ -99,7 +99,7 @@ body > .container > header > nav > ul > li > a {
     display:inline-block;
     float:none;
     /* reset the text-align */
-    text-align:left;
+    text-align:center;
     /* inline-block space fix */
     margin-right:-4px;
 }
@@ -107,7 +107,7 @@ body > .container > header > nav > ul > li > a {
     display:inline-block;
     float:none;
     /* reset the text-align */
-    text-align:right;
+    text-align:center;
     /* inline-block space fix */
     margin-right:4px;
 }
