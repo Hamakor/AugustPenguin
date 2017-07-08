@@ -74,11 +74,13 @@ body > .container > header > nav > ul > li > a {
 }
 */
 #tracklist .track {
-    max-width: 250px
+    width: 280px;
+    padding: 15px 7px;
 }
 
 #tracklist .track img {
-    max-width: 100%
+    max-width: 200px;
+    max-height: 100px;
 }
 
 #tracklist h3 {
