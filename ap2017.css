@@ -42,6 +42,7 @@ body > .container > header > nav {
 body > .container > header > nav > ul {
   list-style: none;
   text-align: center;
+  margin-top: 18px;
 }
 
 body > .container > header > nav > ul > li {
