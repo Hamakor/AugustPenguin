@@ -15,21 +15,34 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet"    href="ap2017.css"    type="text/css"  />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- When going to anchors, Scroll up 50, to avoid stuff getting hidded by the navbar -->
+    <script>
+      var shiftWindow = function() { scrollBy(0, -50) };
+      window.addEventListener("hashchange", shiftWindow);
+      function skipNavBar() { if (window.location.hash) shiftWindow(); }
+    </script>
   </head>
 
- <body style="direction: rtl;">
+ <body style="direction: rtl;" onload="skipNavBar()">
     <a href="https://github.com/Hamakor/AugustPenguin"><img class="gh-ribbon" style="left:0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="מזלג אותי ב-GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
 
-    <div id="fb-root"></div>
-
-    <div class="container">
-      <header>
-        <nav>
-          <ul>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span><span class="sr-only">Home</span></a-->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right navbar-rtl">
             <li>
               <a href="index.html">אודות</a>
             </li>
-            <li>
+            <li class="active">
               <a href="#">מסלולים</a>
             </li>
             <li>
@@ -38,13 +51,17 @@
             <li>
               <a href="code_of_conduct.html">כללי התנהגות</a>
             </li>
-            <li>
+          </ul>
+          <ul id="lang-bar" class="nav navbar-nav navbar-left">
+	    <li>
               <a href="en/index.html">English</a>
             </li>
           </ul>
-        </nav>
-      </header>
-    </div>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container -->
+    </nav>
+
+    <div id="fb-root"></div>
 
     <div id="header">
       <div class="hgroup">
@@ -170,5 +187,13 @@
       cc-by-sa <a href="http://hamakor.org.il">Hamakor</a>. Created by <a href="http://tomercohen.com">Tomer Cohen</a>, graphics by <a href="http://sijp.co.il">Shlomi Israely</a>, font by <a href="http://culmus.sf.net">Culmus project</a>.
     </div>
 
- </body>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+    
+</body>
 </html>

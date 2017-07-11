@@ -20,11 +20,20 @@
 </head>
 <body style="direction: ltr">
 <a href="https://github.com/Hamakor/AugustPenguin"><img class="gh-ribbon" style="right: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
-<div id="fb-root"></div>
-<div class="container">
-  <header>
-    <nav>
-      <ul>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!--a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span><span class="sr-only">Home</span></a-->
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
         <li>
           <a href="index.html">About</a>
         </li>
@@ -34,23 +43,23 @@
         <li>
           <a href="index.html#registration">Registration</a>
         </li>
-        <li>
+        <li class="active">
           <a href="#">Code of Conduct</a>
         </li>
-        <li>
-          <a href="../index.html">עברית</a>
+      </ul>
+      <ul id="lang-bar" class="nav navbar-nav navbar-right">
+	<li>
+	  <a href="../index.html">עברית</a>
         </li>
       </ul>
-    </nav>
-  </header>
-</div>
-<div id="header">
-    <div class="hgroup">
-        <h1 id="conference-code-of-conduct">Conference Code of Conduct</h1>
-    </div>
-</div>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</nav>
 
-<div id="content" class="section" style="text-align: left">
+<div class="container">
+  <h1 id="conference-code-of-conduct">Conference Code of Conduct</h1>
+  <div id="content" class="section" style="text-align: left">
+  
     <p>All attendees, speakers, sponsors and volunteers at our conference are
         kindly asked to adopt the following code of conduct,
         and are required to agree to the Anti-Harassment Policy.
@@ -88,10 +97,19 @@
     </ul>
     <p>Conference staff will be happy to help participants contact hotel/venue security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the conference. We value your attendance.</p>
 <p>We expect participants to follow these rules at conference and workshop venues and conference-related social events.</p>
+  </div>
 </div>
-
 <div id="footer">
     cc-by-sa <a href="http://hamakor.org.il">Hamakor</a>. Design by <a href="http://tomercohen.com">Tomer Cohen</a>, graphics by <a href="http://sijp.co.il">Shlomi Israely</a>, font by <a href="http://culmus.sf.net">Culmus project</a>.
 </div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+
 </body>
 </html>
