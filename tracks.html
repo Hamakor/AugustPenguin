@@ -16,14 +16,14 @@
     <link rel="stylesheet"    href="ap2017.css"    type="text/css"  />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- When going to anchors, Scroll up 50, to avoid stuff getting hidded by the navbar -->
-    <script>
+    <!--script type="text/javascript">
       var shiftWindow = function() { scrollBy(0, -50) };
       window.addEventListener("hashchange", shiftWindow);
       function skipNavBar() { if (window.location.hash) shiftWindow(); }
-    </script>
+    </script-->
   </head>
 
- <body style="direction: rtl;" onload="skipNavBar()">
+ <body style="direction: rtl;">
     <a href="https://github.com/Hamakor/AugustPenguin"><img class="gh-ribbon" style="left:0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="מזלג אותי ב-GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -72,8 +72,7 @@
     <div id="tracks-content" class="section" style="text-align: right">
 
       <div class="track">
-        <a id="general_track" name="general_track"></a>
-        <div class="inner-logo-sec">
+        <div class="inner-logo-sec" id="general_track">
           <img src="images/Hamakor_Logo.png" alt="hamakor logo" class="track-img"/>
           <h2>מסלול מרכזי</h2>
           <p>המסלול המרכזי מאורגן ע"י הצוות המארגן של אוגוסט פינגווין. תוכן המסלול:</p>
@@ -87,8 +86,7 @@
       </div>
 
       <div class="track">
-        <a id="postgres_track" name="postgres_track"></a>
-        <div class="inner-logo-sec">
+        <div id="postgres_track" class="inner-logo-sec">
           <img src="images/postgres-430-ww.png" alt="postgresql logo" class="track-img"/>
           <h2>PostgreSQL Israel</h2>
           <p>המסלול מאורגן ע"י <a href="https://www.meetup.com/PostgreSQL-Israel/" target="_blank">קבוצת ה-meetup הישראלית של פוסטגרס</a> שבחסות עמותת המקור, בשיתוף <a href="http://postgresql.org.il/" target="_blank">קהילת פוסטגרס ישראל</a>.</p>
@@ -97,8 +95,7 @@
       </div>
 
       <div class="track">
-        <a id="legal_track" name="legal_track"></a>
-        <div class="inner-logo-sec">
+        <div id="legal_track" class="inner-logo-sec">
           <img src="images/johnny-automatic-scales-of-justice.png" alt="legal logo" class="track-img"/>
           <h2>מסלול משפטי</h2>
           <p>המסלול המשפטי מאורגן ע"י עו"ד יהונתן קלינגר. תוכן המסלול:</p>
@@ -114,8 +111,7 @@
       </div>
 
       <div class="track">
-        <a id="hasadna_track" name="hasadna_track"></a>
-        <div class="inner-logo-sec">
+        <div id="hasadna_track" class="inner-logo-sec">
           <img src="images/Sadna-logo.png" alt="hasadna logo" class="track-img"/>
           <h2>הסדנא לידע ציבורי</h2>
           <p>המסלול מאורגן ע"י <a href="http://www.hasadna.org.il/" target="_blank">הסדנא לידע ציבורי</a>.</p>
@@ -124,8 +120,7 @@
       </div>
 
       <div class="track">
-        <a id="mediawiki_track" name="mediawiki_track"></a>
-        <div class="inner-logo-sec">
+        <div id="mediawiki_track" class="inner-logo-sec">
           <img src="images/wikimedia.png" alt="wikimedia logo" class="track-img"/>
           <h2>ויקיפדיה כפי שלא הכרתם</h2>
           <p>המסלול מאורגן ע"י <a href="http://www.wikimedia.org.il/projects/%D7%A4%D7%A2%D7%99%D7%9C%D7%95%D7%99%D7%95%D7%AA-%D7%A0%D7%95%D7%A1%D7%A4%D7%95%D7%AA/%D7%9E%D7%A1%D7%9C%D7%95%D7%9C-%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94-%D7%91%D7%9B%D7%A0%D7%A1-%D7%90%D7%95%D7%92%D7%95%D7%A1%D7%98-%D7%A4%D7%99%D7%A0%D7%92%D7%95%D7%95%D7%99%D7%9F-2017/" target="_blank">עמותת ויקימדיה ישראל</a>.</p>
@@ -134,8 +129,7 @@
       </div>
 
       <div class="track">
-        <a id="osstorage_track" name="osstorage_track"></a>
-        <div class="inner-logo-sec">
+        <div id="osstorage_track" class="inner-logo-sec">
           <img src="images/osstorage.png" alt="oss storage logo" class="track-img"/>
           <h2>Open Source Storage</h2>
           <p>להסבר על <a href="http://www.webopedia.com/TERM/O/open_source_storage.html" target="_blank">Open Source Storage</a>.</p>
@@ -153,8 +147,7 @@
       </div>
 
       <div class="track">
-        <a id="devops_track" name="devops_track"></a>
-        <div class="inner-logo-sec">
+        <div id="devops_track" class="inner-logo-sec">
           <img src="images/devops-israel-300x150-transparent.png" alt="devops logo" class="track-img"/>
           <h2>Devops in Israel</h2>
           <p>המסלול מאורגן ע"י <a href="https://www.meetup.com/devops-in-israel/" target="_blank">קהילת DevOps ישראל</a>.</p>
@@ -163,8 +156,7 @@
       </div>
 
       <div class="track">
-        <a id="go_track" name="go_track"></a>
-        <div class="inner-logo-sec">
+        <div id="go_track" class="inner-logo-sec">
           <img src="images/go_israel.png" alt="Go Israel logo" class="track-img"/>
           <h2>Go Israel</h2>
           <p>המסלול מאורגן ע"י <a href="https://www.meetup.com/Go-Israel" target="_blank">קהילת Go ישראל</a>.</p>
@@ -173,8 +165,7 @@
       </div>
 
       <div class="track">
-        <a id="mysql_track" name="mysql_track"></a>
-        <div class="inner-logo-sec">
+        <div id="mysql_track" class="inner-logo-sec">
           <img src="images/MySQL.png" alt="mysql logo" class="track-img"/>
           <h2>MySQL Israel</h2>
           <p>המסלול מאורגן ע"י <a href="https://www.meetup.com/MySQL-User-Group-Israel/" target="_blank">קבוצת משתמשי MySQL בישראל</a>.</p>

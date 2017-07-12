@@ -1,3 +1,11 @@
+/* insert dummy filler before hash targets, to avoid being hidden by the navbar */
+:target::before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+}
+
 body {
   font-family: arial, sans-serif;
   margin: 3.5em auto 0 auto;
