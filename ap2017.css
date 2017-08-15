@@ -245,6 +245,10 @@ h1, h2 {
   display: inline-block;
 }
 
+.sponsor {
+  padding: 0 10px;
+}
+
 .sponsor img{
   max-height: 50vw;
   max-width: 80vw;
@@ -307,7 +311,6 @@ h1, h2 {
   display: inline-block;
   vertical-align: middle;
   font-size: 64px;
-  text-align: start;
 }
 
 .inner-logo-sec h2 {
