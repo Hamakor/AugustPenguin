@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@hamakor">
+    <meta name="twitter:title" content="אוגוסט פינגווין 2017 — הכנס השנתי לתכנה חופשית, לינוקס וקוד פתוח">
+    <meta name="twitter:description" content="כנס אוגוסט פינגווין הוא הכנס השנתי של קהילת התוכנה החופשית בישראל המאורגן על ידי עמותת המקור. הכנס מהווה הזדמנות למפגש חברתי במקביל להרצאות טכניות, הצגה של יוזמות ופרויקטים חדשים ועדכונים על פעילות בנושאי קוד פתוח ותכנה חופשית בישראל במהלך השנה האחרונה. ">
+    <meta name="twitter:image" content="//ap.hamakor.org.il/2017/ap_button.png">
+
+    <meta name="description"  content="כנס אוגוסט פינגווין הוא הכנס השנתי של קהילת התוכנה החופשית בישראל המאורגן על ידי עמותת המקור. הכנס מהווה הזדמנות למפגש חברתי במקביל להרצאות טכניות, הצגה של יוזמות ופרויקטים חדשים ועדכונים על פעילות בנושאי קוד פתוח ותכנה חופשית בישראל במהלך השנה האחרונה." />
+    <meta name="keywords" content="אוגוסט פינגווין, תוכנה חופשית, קוד פתוח, עמותת המקור, August Penguin, Free Software, Open Source, HaMakor NPO, ap2017, אפ2017" />
+    <meta name="author"       content="המקור - עמותה ישראלית לתכנה חופשית ולקוד מקור פתוח" />
+    <meta property="og:image" content="//ap.hamakor.org.il/2017/ap_button.png" />
+    <meta property="og:title" content="הכנס השנתי לתכנה חופשית, לינוקס וקוד פתוח" />
+    <meta property="og:site_name" content="אוגוסט פינגווין" />
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+    <title>אוגוסט פינגווין 2017</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet"    href="ap2017.css"    type="text/css"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+  <a href="https://github.com/Hamakor/AugustPenguin"><img class="gh-ribbon" style="left:0;" src="https://camo.githubusercontent.com/121cd7cbdc3e4855075ea8b558508b91ac463ac2/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_green_007200.png"></a>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"></span><span class="sr-only">Home</span></a-->
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right navbar-rtl">
+          <li class="active">
+            <a href="#">אודות</a>
+          </li>
+          <li>
+            <a href="tracks.html">מסלולים</a>
+          </li>
+          <li>
+            <a href="https://ti.to/hamakor/AP2017" target="_blank">הרשמה לכנס</a>
+          </li>
+          <li>
+            <a href="#schedule">תכנית הכנס</a>
+          </li>
+          <li>
+            <a href="code_of_conduct.html">כללי התנהגות</a>
+          </li>
+        </ul>
+        <ul id="lang-bar" class="nav navbar-nav navbar-left">
+	  <li>
+            <a href="en/index.html">English</a>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container -->
+  </nav>
+
+    <div id="fb-root"></div>
+    <div class="container">
+
+      <div class="section" id="aug_logo">
+        <h1 class="noMobile">
+          <a href="http://hamakor.org.il/" target="_blank"><img src="sponsor_logos/Hamakor_logo.png" style="vertical-align: middle; height:62px; width:217px" alt="המקור - עמותה ישראלית לתכנה חופשית ולקוד מקור פתוח"/></a> גאים להציג:
+        </h1>
+        <div class="inner-logo-sec">
+          <img src="ap_button.png" alt="אוגוסט פינגווין 2017 — הכנס השנתי לתכנה חופשית, לינוקס וקוד פתוח." class="noMobile aug-img" />
+          <h1>אוגוסט פינגווין 2017</h1>
+          <div>
+            <p class="aug-location">רמת גן,</p>
+            <p class="aug-location">7-8 בספטמבר 2017</p>
+          </div>
+        </div>
+      </div>
+      <div id="center-msg">
+        הכנס המרכזי של קהילת התוכנה החופשית והקוד הפתוח בישראל
+      </div>
+      <div class="section" id="sponsorship">
+        <h2>הכנס בחסות</h2>
+        <div class="sponsors">
+          <div class="gold">
+            <h3>חסות זהב</h3>
+            <div class="sponsor">
+                <a href="https://www.suse.com/" target="_blank">
+                    <img src="sponsor_logos/suse_logo_w-tag_color.png" alt="SUSE">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://www.redhat.com" target="_blank">
+                    <img src="sponsor_logos/Redhat.png" alt="Red Hat">
+                </a>
+            </div>
+          </div>
+          <div class="silver">
+            <h3>חסות כסף</h3>
+            <div class="sponsor">
+                <a href="http://www.wikimedia.org.il/" target="_blank">
+                    <img src="images/wikimedia.png" alt="ויקימדיה ישראל">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://postgrespro.co.il/" target="_blank">
+                    <img src="sponsor_logos/PGpro.png" alt="פוסטגרס מקצוענים">
+                </a>
+            </div>
+            <div class="sponsor">
+                <a href="https://redislabs.com/" target="_blank">
+                    <img src="sponsor_logos/Redis-Labs.png" alt="Redis Labs">
+                </a>
+            </div>
+          </div>
+          <!--div class="bronze">
+            <h3>חסות ארד</h3>
+            <div class="sponsor">
+            </div>
+          </div-->
+        </div><!-- End sponsors div-->
+        רוצים לתת חסות? צרו קשר עם <a href="mailto:board@hamakor.org.il">board@hamakor.org.il</a>
+      </div>
+
+      <a name="tracks" id="tracks"></a>
+      <h2>מסלולים</h2>
+      <div id="tracklist">
+        <div class="row row-centered">
+          <div class="section col-md-12">
+              בנוסף למסלול המרכזי, השנה יהיו מסלולים בתחומים שונים,
+              שינוהלו ע"י קהילות הקוד הפתוח והתכנה החופשית הקיימות בארץ. רשימת
+              המסלולים המלאה עדיין פתוחה לשינויים - אם אתם חברים בקהילה או קבוצה
+              העוסקת בתחום הקשור לקוד פתוח או תכנה חופשית, ורוצים לקחת חלק בכנס, אנא
+              צרו קשר במייל
+              <a href="mailto:august@hamakor.org.il">august@hamakor.org.il</a>
+          </div>
+        </div>
+        <div class="row row-centered">
+          <div class="track col-12 col-sm-3 col-centered-rtl">
+            <a href="tracks.html#general_track">
+              <img src="images/Hamakor_Logo.png">
+              <h3>מסלול מרכזי</h3>
+            </a>
+          </div>
+        </div>
+        <div class="row row-centered">
+          <div class="track col-12 col-sm-3 col-centered-rtl">
+            <a href="tracks.html#postgres_track">
+              <img src="images/postgres-430-ww.png" alt="postgresql logo"/>
+              <h3>PostgreSQL Israel</h3>
+            </a>
+          </div>
+          <div class="track col-12 col-sm-3 col-centered-rtl">
+            <a href="tracks.html#legal_track">
+              <img src="images/johnny-automatic-scales-of-justice.png" alt="legal logo"/>
+              <h3>מסלול משפטי</h3>
+            </a>
+          </div>
+          <div class="track col-12 col-sm-3 col-centered-rtl">
+            <a href="tracks.html#hasadna_track">
+              <img src="images/Sadna-logo.png" alt="hasadna logo"/>
+              <h3>הסדנא לידע ציבורי</h3>
+            </a>
+          </div>
+          <div class="track col-12 col-sm-3 col-centered-rtl">
+            <a href="tracks.html#mediawiki_track">
+              <img src="images/wikimedia.png" alt="wikimedia logo"/>
+              <h3>ויקיפדיה כפי שלא הכרתם</h3>
+            </a>
+          </div>
+          <div class="track col-12 col-sm-3 col-centered-rtl">
+            <a href="tracks.html#osstorage_track">
+              <img src="images/osstorage.png" alt="oss storage logo"/>
+              <h3>Open Source Storage</h3>
+            </a>
+          </div>
+          <div class="track col-12 col-sm-3 col-centered-rtl">
+            <a href="tracks.html#devops_track">
+              <img src="images/devops-israel-300x150-transparent.png" alt="devops logo"/>
+              <h3>DevOps in Israel</h3>
+            </a>
+          </div>
+          <div class="track col-12 col-sm-3 col-centered-rtl">
+            <a href="tracks.html#go_track">
+              <img src="images/go_israel.png" alt="Go Israel logo"/>
+              <h3>Go Israel</h3>
+            </a>
+          </div>
+          <div class="track col-12 col-sm-3 col-centered">
+            <a href="tracks.html#mysql_track">
+              <img src="images/MySQL.png" alt="MySQL logo"/>
+              <h3>MySQL Israel</h3>
+            </a>
+          </div>
+        </div><!-- End row -->
+
+      </div><!-- End tracks container -->
+
+        <div class="section" id="schedule">
+          <h2>תכנית הכנס</h2>
+          <style>
+          table { width: 100% }
+          td, th { border: 1px solid silver; text-align: center; width: 10% }
+          </style>
+          <h3>יום חמישי</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>חדר</th>
+                <th>2000</th>
+                <th>2101</th>
+                <th>2102</th>
+                <th>2103</th>
+                <th>2106</th>
+              </tr>
+              <tr>
+                <th>מסלול - בוקר</th>
+                <th rowspan="2">מסלול מרכזי</th>
+                <th>Devops</th>
+                <th>-</th>
+                <th>Go</th>
+                <th>הסדנא לידע ציבורי</th>
+              </tr>
+              <tr>
+                <th>מסלול - אחה"צ</th>
+                <!-- <th>מסלול מרכזי</th> -->
+                <th>MySQL</th>
+                <th>Lightning Talks</th>
+                <th>מסלול מרכזי</th>
+                <th>Storage</th>
+              </tr>
+            </thead>
+              <tr>
+                <td>08:30
+                <td colspan="5" rowspan="2">התכנסות והרשמה</td>
+              </tr>
+              <tr>
+                <td>08:45</td>
+              </tr>
+              <tr>
+                <td>09:00</td>
+                <td colspan="5">דברי פתיחה - דבר העמותה</td>
+              </tr><tr>
+                <td>09:15</td>
+                <td colspan="5">ברכות - ערן כרמון, מנמ"ר, משרד המדע והטכנולוגיה ומשרד התרבות והספורט</td>
+              </tr><tr>
+                <td>09:30</td>
+                <td rowspan="3">קוד פתוח בעולם הרפואה / גיל בהט</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>09:45</td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+                <td rowspan="4">The Right Way To <b>Go</b> / Guy Brandwine</td>
+                <td></td>
+              </tr><tr>
+                <td>10:00</td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>10:15</td>
+                <td rowspan="2">הנגשת מידע בחינוך / אבנר קנטור</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>10:30</td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>10:45</td>
+                <td>הפסקה</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>11:00</td>
+                <td rowspan="2">Dr. Keras or: How I Learned to Stop Worrying and Love NLP / דליה גרצמן</td>
+                <td></td>
+                <td></td>
+                <td rowspan="3">מדוע Go הוא הבחירה הטבעית לפרויקט הבא שלכם / מיקי טבקה</td>
+                <td></td>
+              </tr><tr>
+                <td>11:15</td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>11:30</td>
+                <td>Linux is 25+ years old: Enabling a solid open source foundation for the software defined everything future / אמיר פלד</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>11:45</td>
+                <td>הפסקה</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>12:00</td>
+                <td rowspan="2">איסוף, שמירה והצגה של נתונים מ IoT / יעקב זמיר</td>
+                <td></td>
+                <td></td>
+                <td rowspan="3">Why Go Scales? / Eyal Post</td>
+                <td></td>
+              </tr><tr>
+                <td>12:15</td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>12:30</td>
+                <td rowspan="2">Effective functional (public api driven) tests / אלון ניסר</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>12:45</td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>13:00</td>
+                <td colspan="5" rowspan="4">הפסקת צהריים</td>
+              </tr><tr>
+                <td>13:15</td>
+              </tr><tr>
+                <td>13:30</td>
+              </tr><tr>
+                <td>13:45</td>
+              </tr><tr>
+                <td>14:00</td>
+                <td rowspan="2">Let's Encrypt: Delivering SSL/TLS Everywhere / שגיא קדמי</td>
+                <td></td>
+                <td rowspan="6">Lightning Talks</td>
+                <td rowspan="3">תרומה לקוד פתוח עם GIT / ליאור קפלן</td>
+                <td rowspan="3">Back to the Future With C++ and Seastar / אבי קיוויתי</td>
+              </tr><tr>
+                <td>14:15</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <!--td></td-->
+                <!-- <td></td> -->
+              </tr><tr>
+                <td>14:30</td>
+                <td rowspan="2">Dirty Cow - CVE-2016-5195 / גילי ינקוביץ'</td>
+                <td></td>
+                <!--td></td-->
+                <!-- <td></td> -->
+              </tr><tr>
+                <td>14:45</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <td rowspan="2">קוד פתוח? גם אני רוצה לעזור! / שמעון שטיין</td>
+                <td>הפסקה</td>
+              </tr><tr>
+                <td>15:00</td>
+                <td rowspan="2">Searching Billions of Documents with Redis / דביר וולק</td>
+                <td></td>
+                <!--td></td-->
+                <!--td></td-->
+                <td rowspan="2">Networking NVMe-Based Flash with TCP/IP: Using the Protocol Everyone Knows / מולי בן יהודה</td>
+              </tr><tr>
+                <td>15:15</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <td>5 טיפים איך לבחור פרויקט קוד פתוח / יהודית שרעבי</td>
+                <!-- <td></td> -->
+              </tr><tr>
+                <td>15:30</td>
+                <td>הפסקה</td>
+                <td></td>
+                <td>הפסקה</td>
+                <td>הפסקה</td>
+                <td rowspan="2">Introduction to Ceph / אורית ווסרמן</td>
+              </tr><tr>
+                <td>15:45</td>
+                <td rowspan="2">מבוא לספריות דינמיות / מאיה רשיש</td>
+                <td></td>
+                <td rowspan="7">Lightning Talks</td>
+                <td rowspan="4">עקרונות וכלים (שאתם כבר מכירים) שיעזרו לכם לבנות פרוייקט קוד פתוח מוצלח / אורי הוך</td>
+                <!-- <td></td> -->
+              </tr><tr>
+                <td>16:00</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <!--td></td-->
+                <td rowspan="2">הפסקה</td>
+              </tr><tr>
+                <td>16:15</td>
+                <td rowspan="3">In Search of Bug-Free SW  / יחיאל קמחי</td>
+                <td></td>
+                <!--td></td-->
+                <!--td></td-->
+                <!-- <td></td> -->
+              </tr><tr>
+                <td>16:30</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <!--td></td-->
+                <td rowspan="2">All your storage are belong to Ansible / אדם ליטקה</td>
+              </tr><tr>
+                <td>16:45</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <td rowspan="3">(כמעט) כל מה שרציתי לדעת על קהילות ולא העזת לשאול / רעי דישון</td>
+                <!-- <td></td> -->
+              </tr><tr>
+                <td>17:00</td>
+                <td rowspan="2">מדוע כדאי להשתמש ב- GNU/Emacs / חן לוי</td>
+                <td></td>
+                <!--td></td-->
+                <!--td></td-->
+                <td rowspan="2">איך להגן על המכונות הוירטואליות באמצעות שרת אחסון / ניר סופר</td>
+              </tr><tr>
+                <td>17:15</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <!--td></td-->
+                <!-- <td></td> -->
+            <tbody>
+            </tbody>
+          </table>
+          <h3>יום שישי</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>חדר</th>
+                <th>2000</th>
+                <th>2101</th>
+                <th>2102</th>
+                <th>2103</th>
+                <th>2106</th>
+              </tr>
+              <tr>
+                <th>מסלול</th>
+                <th>מסלול מרכזי</th>
+                <th>-</th>
+                <th>משפטי</th>
+                <th>ויקימדיה</th>
+                <th>PostgreSQL</th>
+              </tr>
+            </thead>
+              <tr>
+                <td>08:30
+                <td colspan="5" rowspan="2">התכנסות</td>
+              </tr>
+              <tr>
+                <td>08:45</td>
+              </tr>
+              <tr>
+                <td>09:00</td>
+                <td rowspan="2">מוקיטו - כיצד אובייקטים מדומים יצרו קהילה אמיתית / אלון מוריניק</td>
+                <td></td>
+                <td rowspan="14">סדנה משפטית</td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>09:15</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>09:30</td>
+                <td rowspan="2">TBD</td>
+                <td></td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>09:45</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>10:00</td>
+                <td>הפסקה</td>
+                <td></td>
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>10:15</td>
+                <td rowspan="2">Bringing people together with Open Source / פרדי רולנד ואורי רבין</td>
+                <td></td>
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>10:30</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>10:45</td>
+                <td rowspan="2">The Modiin co-learning meetings - Improving employability using Open Source / גאבור סבו</td>
+                <td></td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>11:00</td>
+                <!--td></td-->
+                <td></td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>11:15</td>
+                <td>הפסקה</td>
+                <td></td>
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>11:30</td>
+                <td rowspan="2">קוד פתוח במידברן - יוצרים קהילה / ליאור קפלן</td>
+                <td></td>
+                <!-- <td></td> -->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>11:45</td>
+                <!--td>/td-->
+                <td></td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>12:00</td>
+                <td rowspan="2">TBD</td>
+                <td></td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>12:15</td>
+                <!--td>/td-->
+                <td></td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>12:30</td>
+                <td colspan="5" rowspan="2">הפסקה</td>
+              </tr><tr>
+                <td>12:45</td>
+              </tr><tr>
+                <td>13:00</td>
+                <td rowspan="4">דברי סיכום ואסיפה כללית של עמותת המקור</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>13:15</td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>13:30</td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr><tr>
+                <td>13:45</td>
+                <!--td></td-->
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+
+        <a name="location" id="location"></a>
+        <h2>איפה ומתי?</h2>
+        <dl class="location">
+          <dt>
+            מועד הכנס:
+          </dt>
+          <dd>
+            יום חמישי, 07.09.2017, 8:30-16:30
+            יום שישי, 08.09.2017, 8:30-14:30
+          </dd>
+          <dt>
+            מיקום הכנס:
+          </dt>
+          <dd>
+            בנין מיטשל, מכללת שנקר, רחוב ידע עם 8, רמת גן<br/>
+            <a href="geo:32.089956,34.803089?q=32.089956,34.803089" title="קישור זה עשוי שלא לפעול בדפדפנים שולחניים – ניתן לגשת אליו ממכשירים ניידים">קבלת הוראות הכוונה לנייד</a>
+          </dd>
+        </dl>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1690.126506559284!2d34.80220240059791!3d32.08944689833697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4bc41f0decb5%3A0x56b7f243858b827c!2sYeda+Am+St+8%2C+Ramat+Gan!5e0!3m2!1sen!2sil!4v1502911756970" width="640" height="480" frameborder="0" style="border:0" allowfullscreen class="noMobile"></iframe>
+        <p>
+          <a class="btn" href="http://www.google.com/calendar/event?action=TEMPLATE&text=אוגוסט%20פינגווין%202017&dates=20170907T083000/20170908T163000&details=הכנס%20השנתי%20של%20עמותת%20המקור&location=בנין%20מיטשל,%20מכללת%20שנקר,%20רמת-גן">הוסף ליומן גוגל</a>
+        </p>
+        <p><a href="https://docs.google.com/spreadsheets/d/18VmY4Mu4Wh8Yu4rWDgDXnYkp0vhyDT3mn7VFgPhQNns/edit?usp=sharing">לרשימת טרמפים</a></p>
+
+        <h2 id="registration">הרשמה לכנס</h2>
+        <div>
+          ההרשמה פתוחה! ניתן להרשם ב<a href="https://ti.to/hamakor/AP2017" target="_blank">אתר ההרשמה</a> עד יום שלישי, ה-5 בספטמבר.
+        </div>
+
+
+
+        <div class="section" id="contribute">
+          <h2>נשמח לסיוע!</h2>
+          <p>נשמח למתנדבים מן הקהילה שיעזרו לקראת במהלך הכנס. פירוט המשימות שבהן דרושה עזרה נמצא בעמוד "<a href="http://wiki.hamakor.org.il/index.php/%D7%90%D7%95%D7%92%D7%95%D7%A1%D7%98_%D7%A4%D7%99%D7%A0%D7%92%D7%95%D7%95%D7%99%D7%9F/2017#.D7.9E.D7.AA.D7.A0.D7.93.D7.91.D7.99.D7.9D">אוגוסט פינגווין</a>" בוויקי של העמותה. ניתן להרשם כמתנדבים במייל <a href="mailto:august@hamakor.org.il">august@hamakor.org.il</a></p>
+        </div>
+
+        <a id="social" name="social"></a>
+        <h2>עדכונים ברשתות חברתיות</h2>
+        <div>
+          <p>אתם מוזמנים לפרסם את הקישור לדף זה ולהזמין את חבריכם לקחת חלק באירוע. <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fap.hamakor.org.il%2F">שיתוף בפייסבוק</a>,
+            <a href="https://twitter.com/intent/tweet?text=+%D7%92%D7%9D+%D7%90%D7%A0%D7%99+%D7%90%D7%A9%D7%AA%D7%AA%D7%A3+%D7%91%D7%9B%D7%A0%D7%A1+%D7%90%D7%95%D7%92%D7%95%D7%A1%D7%98+%D7%A4%D7%99%D7%A0%D7%92%D7%95%D7%95%D7%99%D7%9F+2017.+%D7%90%D7%AA%D7%9D+%D7%9E%D7%95%D7%96%D7%9E%D7%A0%D7%99%D7%9D+%D7%9C%D7%94%D7%A6%D7%98%D7%A8%D7%A3+%D7%90%D7%9C%D7%99%D7%A0%D7%95!++%23%D7%90%D7%A42017&url=http%3A%2F%2Fap.hamakor.org.il%2F&via=hamakor">שיתוף בטוויטר</a>.
+          <p>אתם מוזמנים לתייג את התמונות והסטטוסים שיעלו במהלך האירוע עם התגית <strong>#אפ2017</strong>.</p>
+
+          <p><a href="https://www.facebook.com/hashtag/%D7%90%D7%A42017">פרסום הודעה בפייסבוק וצפייה בהודעות קודמות</a></p>
+        </div>
+
+
+        <a id="contact" name="contact"></a>
+        <h2>יצירת קשר</h2>
+        <div>
+          ניתן ליצור קשר עם ועד עמותת המקור ומארגני הכנס בכתובת הדואר האלקטרוני הבאה: <a href="mailto:august@hamakor.org.il">august@hamakor.org.il</a>
+        </div>
+
+        <a id="code_of_conduct" name="code_of_conduct"></a>
+        <h2>כללי התנהגות</h2>
+        <div>
+      המשתתפים בכנס מתבקשים לנהוג על פי <a href="code_of_conduct.html">כללי ההתנהגות</a> הנדרשים.
+        </div>
+
+      <div class="section">
+          <h2>כנסים קודמים</h2>
+          <p><a href="http://ap.hamakor.org.il/2016/">אוגוסט פינגווין 2016</a></p>
+          <p><a href="http://ap.hamakor.org.il/2015/">אוגוסט פינגווין 2015</a></p>
+          <p><a href="http://ap.hamakor.org.il/2013/">אוגוסט פינגווין 2013</a></p>
+          <p><a href="http://ap.hamakor.org.il/2012/">אוגוסט פינגווין 2012</a></p>
+          <p><a href="http://ap.hamakor.org.il/2011/">אוגוסט פינגווין 2011</a></p>
+          <p><a href="http://ap.hamakor.org.il/2010/">אוגוסט פינגווין 2010</a></p>
+          <p><a href="http://ap.hamakor.org.il/2009/">אוגוסט פינגווין 2009</a></p>
+          <p><a href="http://ap.hamakor.org.il/2008/">אוגוסט פינגווין 2008</a></p>
+          <p><a href="http://ap.hamakor.org.il/2007/">אוגוסט פינגווין 2007</a></p>
+          <p><a href="http://ap.hamakor.org.il/2006/">אוגוסט פינגווין 5</a></p>
+          <p><a href="http://ap.hamakor.org.il/2005/">אוגוסט פינגווין 4</a></p>
+          <p><a href="http://ap.hamakor.org.il/2004/">אוגוסט פינגווין 3</a></p>
+          <p><a href="http://ap.hamakor.org.il/2003/">אוגוסט פינגווין 2</a></p>
+          <p><a href="http://ap.hamakor.org.il/2002/">אוגוסט פינגווין 1</a></p>
+      </div>
+
+            <div id="greetings">נשמח לראותכם!</div>
+
+
+      <div id="footer">
+        <div class="website-license" style="direction: rtl;">
+          <p>אתר August Penguin 2017 שואב השראה ומבוסס על אתר <a href="http://il.pycon.org/2017/">PyCon IL</a>, שמתפרסם ברשיון MIT. המון תודות לקהילת הפייתון הישראלית על שחלקו עמנו משאבים על פי גישת הקוד הפתוח.</p>
+        </div>
+          cc-by-sa <a href="http://hamakor.org.il">Hamakor</a>. Created by <a href="http://tomercohen.com">Tomer Cohen</a>, graphics by <a href="http://sijp.co.il">Shlomi Israely</a>, font by <a href="http://culmus.sf.net">Culmus project</a>.
+
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

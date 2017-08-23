@@ -1,0 +1,343 @@
+/* insert dummy filler before hash targets, to avoid being hidden by the navbar */
+:target::before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin-top: -50px;
+}
+
+body {
+  font-family: arial, sans-serif;
+  margin: 3.5em auto 0 auto;
+  direction: rtl;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+h1 {
+  color: #1e5493;
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h2, h3, h4, h5, h6 {
+  color: #C65B2E;
+}
+
+.btn {
+  background-color: #1e5493;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 4px;
+  border: 1px solid #0e4483;
+}
+
+#navbar ul.navbar-rtl > li {
+    float: right
+}
+
+#lang-bar.navbar-right {
+    margin-right: 134px;
+}
+
+#lang-bar.navbar-left {
+    margin-left: 134px;
+}
+
+@media screen and (max-width: 768px){
+  #lang-bar.navbar-right {
+      margin-right: 0px;
+  }
+
+  #lang-bar.navbar-left {
+      margin-left: 0px;
+  }
+
+  #navbar ul.navbar-rtl > li {
+      float: none;
+  }
+}
+
+.section-float {
+  float: right;
+  width: 45%;
+  margin: 0 2%;
+}
+
+#content {
+  padding: 5em;
+}
+
+#content a[name] { position: relative; top: -100px;}
+
+#content table {border-collapse:collapse; margin: auto;}
+#content table td, #content table th {border: 1px solid gray; max-width: 20em;}
+
+/*
+#tracklist.container {
+    max-width: 1000px
+}
+*/
+#tracklist .track {
+    width: 280px;
+    padding: 15px 7px;
+}
+
+#tracklist .track img {
+    max-width: 200px;
+    max-height: 100px;
+}
+
+#tracklist h3 {
+  font-size: 18px;
+  color: #1e5493;
+  text-align: center;
+}
+
+/* centered columns styles - see http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-centered-rtl {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:4px;
+}
+/**/
+
+#sponsorship {
+  margin-top: 25px;
+  min-height: 100%;
+  position: relative;
+}
+
+.location {
+  font-size: 120%;
+}
+
+.location dd{
+  margin: 0 0 5px;
+}
+
+#footer {
+  background: #1e5493;
+  color: #fff;
+  margin-top: 25px;
+  padding: 25px;
+  direction: ltr;
+  font-size: 14px;
+}
+
+#footer a {
+  color: #fff;
+}
+
+h1, h2 {
+  font-family: arial, sans-serif;
+}
+
+#greetings {
+  font-size: 200%;
+  font-family: "Anka CLM Bold,אנקה שמן", "אנקה שמן", "Anka CLM Bold", "fancyankaotfAnkaCLMBoldotf_font";
+}
+
+  @font-face {
+  src: url("AnkaCLM-Bold.otf");
+  font-family: "fancyankaotfAnkaCLMBoldotf_font";
+}
+
+#greetings:before {
+  display: block;
+  background: url(favicon_1.png) no-repeat;
+  height: 256px; width: 256px;
+  margin: auto;
+  content:"";
+}
+#greetings {
+  margin-bottom: 50px;
+}
+
+/* animation time! */
+@media screen and (min-width: 400px) {
+  #greetings:hover:before {
+    position: relative;
+
+    animation-duration: 1s;
+    animation-name: jump;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes jump {
+    from {
+      top:0
+    }
+    50% {
+      top:-50px
+    }
+    to {
+      top:0
+    }
+  }
+}
+
+
+/* responsive style */
+@media screen and (min-width: 769px) {
+  .onlyMobile {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    body > .container > header > nav > ul > li > a {
+        font-size: 12px;
+        vertical-align: top;
+
+    }
+
+    .noMobile {
+        display: none;
+    }
+
+    .section-float {
+        float: inherit;
+        margin: inherit;
+        width: inherit;
+    }
+
+    .onlyMobile {
+      display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+  #content table {
+    width: 95vw;
+    table-layout: fixed;
+    display: table;
+    margin-right: -40px;
+  }
+  #content tr {
+    display: table-row;
+  }
+  #content td, #content th {
+    display: table-cell;
+    word-wrap: break-word;
+  }
+}
+
+.sponsor, .sponsor a{
+  display: inline-block;
+}
+
+.sponsor {
+  padding: 0 10px;
+}
+
+.sponsor img{
+  max-height: 50vw;
+  max-width: 80vw;
+}
+
+.silver img{
+  max-height: 40vw;
+}
+
+.bronze img{
+  max-height: 30vw;
+}
+
+.sponsors h3 {
+  color: #1e5493;
+}
+
+.language {
+  position: absolute;
+  margin-top: 40px;
+}
+
+.track {
+  padding: 10px 0;
+}
+
+.track-img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 70px;
+  max-width: 90px;
+}
+
+.aug-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 250px;
+  height: 250px;
+}
+
+.aug-location {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#center-msg {
+  padding: 15px 0;
+  color: #fff;
+  background-color: #1e5493;
+  font-size: 28px;
+  text-align: center;
+}
+
+.inner-logo-sec {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.inner-logo-sec h1 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 64px;
+}
+
+.inner-logo-sec h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.inner-logo-sec div {
+  font-size: 30px;
+  padding-right: 14px;
+}
+
+.gh-ribbon{
+  position: fixed;
+  top: 0;
+  border: 0;
+  z-index: 10000;
+}
+
+@media screen and (max-width: 768px){
+  .gh-ribbon{
+    display: none;
+  }
+}
+
+.reg-iframe{
+  width: 80%;
+  max-width: 780px;
+  height: 420px;
+}
