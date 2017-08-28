@@ -290,8 +290,11 @@ h1, h2 {
 }
 
 .aug-location {
-  display: inline-block;
   vertical-align: middle;
+}
+
+.aug-location img {
+  max-width: 80vw;
 }
 
 #center-msg {
