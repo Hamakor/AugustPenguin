@@ -10,8 +10,11 @@ body {
   font-family: arial, sans-serif;
   margin: 3.5em auto 0 auto;
   direction: rtl;
-  text-align: center;
   font-size: 1.8em;
+}
+
+.main, h1 {
+  text-align: center;
 }
 
 h1 {
