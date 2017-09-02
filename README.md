@@ -11,7 +11,7 @@ Website for August Penguin 2017  http://ap.hamakor.org.il
 
 * Fork and clone the repo (it should automatically use the latest branch - ap2017)
 * edit the files locally
-* to open the local html files in a browser, you can use Python's built-in http module (or any other way to serve files):
+* You can open the local html files directly in a browser, or you can use Python's built-in http module (or any other way to serve files):
 ```
 ~/AugustPenguin$ python -m SimpleHTTPServer
 Serving HTTP on 0.0.0.0 port 8000 ...
