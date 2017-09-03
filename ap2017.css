@@ -6,6 +6,10 @@
   margin-top: -50px;
 }
 
+li:target::before {
+  height: 100px;
+}
+
 body {
   font-family: arial, sans-serif;
   margin: 3.5em auto 0 auto;
