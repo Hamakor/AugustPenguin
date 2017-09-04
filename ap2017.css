@@ -353,3 +353,13 @@ h1, h2 {
 #tracks-content dd {
   margin: 0 1em;
 }
+
+#schedule table {
+  width: 100%
+}
+
+#schedule td, th {
+  border: 1px solid silver;
+  text-align: center;
+  width: 10%
+}
