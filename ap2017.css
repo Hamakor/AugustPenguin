@@ -346,8 +346,10 @@ h1, h2 {
   }
 }
 
-.reg-iframe{
-  width: 80%;
-  max-width: 780px;
-  height: 420px;
+#tracks-content {
+  text-align: justify;
+}
+
+#tracks-content dd {
+  margin: 0 1em;
 }
