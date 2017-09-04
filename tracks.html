@@ -390,6 +390,97 @@ guaranteed or not depends greatly on the structure of the thing made.”[0]</blo
               <li>SSD</li>
               <li>NVMe</li>
           </p>
+          
+          <ul class="list-group">
+            <li class="list-group-item"><h3>יום חמישי, חדר 2106</h3></li>
+            <li id="osstorage-t1400" class="list-group-item"><h4>14:00 Back to the Future With C++ and Seastar / אבי קויתי</h4>
+              <p dir="ltr">Writing I/O-intensive applications in today's environments, with hundreds of thousands of available SSD iops, 
+                dozens of cores, and tens-of-gigabits-per-second network interfaces, is more challenging than ever.</p>
+              <p dir="ltr">
+                We will present Seastar, a modern, open-source C++14 framework for writing high-concurrency, 
+                high-throughput server applications. Seastar is the framework behind ScyllaDB, a drop-in 
+                Apache Cassandra replacement that provides 10X throughput improvements on the same hardware.
+              </p>
+              <dl><dt>אודות המרצה</dt><dd dir="ltr">
+                  Avi Kivity, the CTO of ScyllaDB, is known mostly for starting the Kernel-based Virtual Machine (KVM) project, 
+                  the hypervisor underlying many production clouds. He has worked for Qumranet and Red Hat as KVM maintainer until
+                  December 2012. Avi is now CTO of ScyllaDB, a company that seeks to bring the same kind of innovation to the NoSQL space.
+              </dd></dl>
+            <li id="osstorage-t1500" class="list-group-item"><h4>15:00 Networking NVMe-Based Flash with TCP/IP: Using the Protocol Everyone Knows / Muli Ben-Yehuda</h4>
+              <p dir="ltr"> NVMe over Fabrics has quickly become a popular method for networking non-volatile memory.  
+                It provides a powerful standard framework for specifying storage operations and managing systems.  
+                However, it does not specify a particular binding.  
+                So far, the ones most widely used are RoCE (RDMA over Converged Enhanced Ethernet) and Fibre Channel. 
+                But why not use TCP/IP instead? It is, after all, the most widely used network protocol of them all, 
+                and already well-known and heavily-implemented in every data center.  
+                Mappings of NVMe commands and data movement onto TCP/IP are now available, and performance and latency 
+                results are very promising. 
+                Of course, TCP/IP has issues, including a great deal of overhead not needed for storage operations.
+              </p>
+              <p>(ההרצאה תנתן בעברית) 
+              </p>
+              <dl><dt>אודות המרצה</dt><dd dir="ltr">
+                  Muli Ben-Yehuda is the CTO and co-founder of Lightbits Labs, a startup developing infrastructure 
+                  for hyperscale clouds. 
+                  He was previously Chief Scientist at Stratoscale and researcher and master inventor at IBM Research.
+                  He has co-authored over forty academic publications and holds over thirty US patents in such areas 
+                  as machine and I/O virtualization, cloud computing, and operating system and hypervisor design and 
+                  implementation. 
+                  He has given talks at many conferences, workshops, and universities, including OSDI (where he received 
+                  the Jay Lepreau Best Paper Award for The Turtles Project: Design and Implementation of Nested Virtualization), 
+                  ASPLOS, EuroSys, SYSTOR, VEE, Linux OLS, and FAST. 
+                  He holds an MSc in Computer Science (summa cum laude) from the Technion and a BA (cum laude) from 
+                  the Open University of Israel. He is also an (inactive) Linux kernel maintainer.
+              </dd></dl>
+            <li id="osstorage-t1530" class="list-group-item"><h4>15:30 Introduction to Ceph / Orit Wasserman</h4>
+              <p dir="ltr">
+                Ceph is a highly available distributed software defined storage, providing block, object and 
+                file-system interfaces. 
+                In the talk will lean more about Ceph, it's architecture and best practices
+              </p>
+              <dl><dt>אודות המרצה</dt><dd dir="ltr">
+                  Orit is a senior engineer at Red Hat, working on object storage (Ceph Rados Gateway).
+                  She has an extensive experience with distributed storage systems (block and file systems).
+                  In her previous role she authored and co-maintained live migration for KVM/QEMU. 
+                  Previously she developed nested virtualization for KVM at IBM Research Labs.
+              </dd></dl>
+            <li id="osstorage-t1630" class="list-group-item">
+              <h4>16:30 All your storage are belong to Ansible / Adam Litke</h4>
+              <p dir="ltr">
+                Today's datacenters are filled with storage arrays that speak different languages. 
+                Even a workflow as simple as provisioning a LUN is vendor specific, non-portable, and can be difficult to automate. 
+                Ansible provides a robust community and rich platform for developing portable automation and with some secret sauce 
+                we can create a volume on any storage backend using the same playbook. 
+                In this talk Adam will introduce the quarry[1] Ansible role, show how it works, and demonstrate how to add support 
+                for new storage backends and new storage operations.
+              </p><p dir="ltr">
+                [1] https://galaxy.ansible.com/aglitke/quarry
+              </p>
+              <dl><dt>אודות המרצה</dt><dd dir="ltr">
+                  Adam began his career as a Linux kernel developer focused on memory management. 
+                  Over the years he has contributed to many projects including: linux, libhugetlbfs, qemu, libvirt, memory 
+                  overcommitment manager (mom), and oVirt. 
+                  These days, Adam works at Red Hat on storage virtualization for oVirt. He enjoys writing code that is 
+                  resilient to the everyday mayhem in datacenters such as power failures, network outages, 
+                  and under-caffienated sysadmins.
+              </dd></dl>
+            <li id="osstorage-t1700" class="list-group-item">
+              <h4>17:00 איך להגן על המכונות הוירטואליות באמצעות שרת האיחסון / ניר סופר</h4>
+              <p>
+                מה קורה כשמפעילים את אותה מכונה וירטואלית פעמיים? יש לך split-brain, והמידע על הדיסקים של המכונה הזאת מושחת.
+                oVirt 4.1 מספקת תכונה חדשה VM Leases, שמונעת מצב זה באמצעות חכירה מבוססת “Disk Paxos” על שרת האיחסון.
+                באמצעות חכירה אנחנו יכולים לשפר את הזמינות של מכונה וירטואלית אם המכונה הפיזית לא נגישה,
+                ולהפעיל את המכונה הווירטואלית על מכונה פיזית אחרת.
+                ניר יציג איך VM Leases משולבים ב-oVirt ואיך אפשר להשתמש בהם.
+                oVirt היא מערכת וירטואליזציה בשלה וחופשית המתחרה בהצלחה במערכות קנייניות.
+              </p>
+              <dl><dt>אודות המרצה</dt><dd>
+                  ניר עובד ברד האט בצוות האיחסון של oVirt מאז 2013,
+                  מאלף את המפלצת הידועה כ-Vdsm.
+                  הוא מתעסק בפייתון ותורם לפרויקטי תוכנה חופשית מאז 2003.
+                  לפרטים נוספים בקרו ב-https://github.com/nirs.
+              </dd></dl>
+          </ul>
         </div>
       </div>
 
