@@ -391,75 +391,75 @@ established afterwards. Whether the correctness of a piece of software can be
               <li>SSD</li>
               <li>NVMe</li>
           </p>
-          
+
           <ul class="list-group">
             <li class="list-group-item"><h3>יום חמישי, חדר 2106</h3></li>
             <li id="osstorage-t1400" class="list-group-item"><h4>14:00 Back to the Future With C++ and Seastar / אבי קויתי</h4>
-              <p dir="ltr">Writing I/O-intensive applications in today's environments, with hundreds of thousands of available SSD iops, 
+              <p dir="ltr">Writing I/O-intensive applications in today's environments, with hundreds of thousands of available SSD iops,
                 dozens of cores, and tens-of-gigabits-per-second network interfaces, is more challenging than ever.</p>
               <p dir="ltr">
-                We will present Seastar, a modern, open-source C++14 framework for writing high-concurrency, 
-                high-throughput server applications. Seastar is the framework behind ScyllaDB, a drop-in 
+                We will present Seastar, a modern, open-source C++14 framework for writing high-concurrency,
+                high-throughput server applications. Seastar is the framework behind ScyllaDB, a drop-in
                 Apache Cassandra replacement that provides 10X throughput improvements on the same hardware.
               </p>
               <dl><dt>אודות המרצה</dt><dd dir="ltr">
-                  Avi Kivity, the CTO of ScyllaDB, is known mostly for starting the Kernel-based Virtual Machine (KVM) project, 
+                  Avi Kivity, the CTO of ScyllaDB, is known mostly for starting the Kernel-based Virtual Machine (KVM) project,
                   the hypervisor underlying many production clouds. He has worked for Qumranet and Red Hat as KVM maintainer until
                   December 2012. Avi is now CTO of ScyllaDB, a company that seeks to bring the same kind of innovation to the NoSQL space.
               </dd></dl>
             <li id="osstorage-t1500" class="list-group-item"><h4>15:00 Networking NVMe-Based Flash with TCP/IP: Using the Protocol Everyone Knows / Muli Ben-Yehuda</h4>
-              <p dir="ltr"> NVMe over Fabrics has quickly become a popular method for networking non-volatile memory.  
-                It provides a powerful standard framework for specifying storage operations and managing systems.  
-                However, it does not specify a particular binding.  
-                So far, the ones most widely used are RoCE (RDMA over Converged Enhanced Ethernet) and Fibre Channel. 
-                But why not use TCP/IP instead? It is, after all, the most widely used network protocol of them all, 
-                and already well-known and heavily-implemented in every data center.  
-                Mappings of NVMe commands and data movement onto TCP/IP are now available, and performance and latency 
-                results are very promising. 
+              <p dir="ltr"> NVMe over Fabrics has quickly become a popular method for networking non-volatile memory.
+                It provides a powerful standard framework for specifying storage operations and managing systems.
+                However, it does not specify a particular binding.
+                So far, the ones most widely used are RoCE (RDMA over Converged Enhanced Ethernet) and Fibre Channel.
+                But why not use TCP/IP instead? It is, after all, the most widely used network protocol of them all,
+                and already well-known and heavily-implemented in every data center.
+                Mappings of NVMe commands and data movement onto TCP/IP are now available, and performance and latency
+                results are very promising.
                 Of course, TCP/IP has issues, including a great deal of overhead not needed for storage operations.
               </p>
-              <p>(ההרצאה תנתן בעברית) 
+              <p>(ההרצאה תנתן בעברית)
               </p>
               <dl><dt>אודות המרצה</dt><dd dir="ltr">
-                  Muli Ben-Yehuda is the CTO and co-founder of Lightbits Labs, a startup developing infrastructure 
-                  for hyperscale clouds. 
+                  Muli Ben-Yehuda is the CTO and co-founder of Lightbits Labs, a startup developing infrastructure
+                  for hyperscale clouds.
                   He was previously Chief Scientist at Stratoscale and researcher and master inventor at IBM Research.
-                  He has co-authored over forty academic publications and holds over thirty US patents in such areas 
-                  as machine and I/O virtualization, cloud computing, and operating system and hypervisor design and 
-                  implementation. 
-                  He has given talks at many conferences, workshops, and universities, including OSDI (where he received 
-                  the Jay Lepreau Best Paper Award for The Turtles Project: Design and Implementation of Nested Virtualization), 
-                  ASPLOS, EuroSys, SYSTOR, VEE, Linux OLS, and FAST. 
-                  He holds an MSc in Computer Science (summa cum laude) from the Technion and a BA (cum laude) from 
+                  He has co-authored over forty academic publications and holds over thirty US patents in such areas
+                  as machine and I/O virtualization, cloud computing, and operating system and hypervisor design and
+                  implementation.
+                  He has given talks at many conferences, workshops, and universities, including OSDI (where he received
+                  the Jay Lepreau Best Paper Award for The Turtles Project: Design and Implementation of Nested Virtualization),
+                  ASPLOS, EuroSys, SYSTOR, VEE, Linux OLS, and FAST.
+                  He holds an MSc in Computer Science (summa cum laude) from the Technion and a BA (cum laude) from
                   the Open University of Israel. He is also an (inactive) Linux kernel maintainer.
               </dd></dl>
             <li id="osstorage-t1530" class="list-group-item"><h4>15:30 Introduction to Ceph / Orit Wasserman</h4>
               <p dir="ltr">
-                Ceph is a highly available distributed software defined storage, providing block, object and 
-                file-system interfaces. 
+                Ceph is a highly available distributed software defined storage, providing block, object and
+                file-system interfaces.
                 In the talk will lean more about Ceph, it's architecture and best practices
               </p>
               <dl><dt>אודות המרצה</dt><dd dir="ltr">
                   Orit is a senior engineer at Red Hat, working on object storage (Ceph Rados Gateway).
                   She has an extensive experience with distributed storage systems (block and file systems).
-                  In her previous role she authored and co-maintained live migration for KVM/QEMU. 
+                  In her previous role she authored and co-maintained live migration for KVM/QEMU.
                   Previously she developed nested virtualization for KVM at IBM Research Labs.
               </dd></dl>
             <li id="osstorage-t1630" class="list-group-item">
               <h4>16:30 All your storage are belong to Ansible / Adam Litke</h4>
               <p dir="ltr">
-                Today's datacenters are filled with storage arrays that speak different languages. 
-                Even a workflow as simple as provisioning a LUN is vendor specific, non-portable, and can be difficult to automate. 
-                Ansible provides a robust community and rich platform for developing portable automation and with some secret sauce 
-                we can create a volume on any storage backend using the same playbook. 
-                In this talk Adam will introduce the <a href="https://galaxy.ansible.com/aglitke/quarry">quarry</a> Ansible role, 
+                Today's datacenters are filled with storage arrays that speak different languages.
+                Even a workflow as simple as provisioning a LUN is vendor specific, non-portable, and can be difficult to automate.
+                Ansible provides a robust community and rich platform for developing portable automation and with some secret sauce
+                we can create a volume on any storage backend using the same playbook.
+                In this talk Adam will introduce the <a href="https://galaxy.ansible.com/aglitke/quarry">quarry</a> Ansible role,
                 show how it works, and demonstrate how to add support for new storage backends and new storage operations.
               <dl><dt>אודות המרצה</dt><dd dir="ltr">
-                  Adam began his career as a Linux kernel developer focused on memory management. 
-                  Over the years he has contributed to many projects including: linux, libhugetlbfs, qemu, libvirt, memory 
-                  overcommitment manager (mom), and oVirt. 
-                  These days, Adam works at Red Hat on storage virtualization for oVirt. He enjoys writing code that is 
-                  resilient to the everyday mayhem in datacenters such as power failures, network outages, 
+                  Adam began his career as a Linux kernel developer focused on memory management.
+                  Over the years he has contributed to many projects including: linux, libhugetlbfs, qemu, libvirt, memory
+                  overcommitment manager (mom), and oVirt.
+                  These days, Adam works at Red Hat on storage virtualization for oVirt. He enjoys writing code that is
+                  resilient to the everyday mayhem in datacenters such as power failures, network outages,
                   and under-caffienated sysadmins.
               </dd></dl>
             <li id="osstorage-t1700" class="list-group-item">
@@ -535,7 +535,39 @@ established afterwards. Whether the correctness of a piece of software can be
           <img src="images/MySQL.png" alt="mysql logo" class="track-img"/>
           <h2>MySQL Israel</h2>
           <p>המסלול מאורגן ע"י <a href="https://www.meetup.com/MySQL-User-Group-Israel/" target="_blank">קבוצת משתמשי MySQL בישראל</a>. המסלול יתקיים ביום חמישי אחר הצהריים.</p>
-          <p>פרטים יעודכנו בקרוב.</p>
+          <ul class="list-group">
+            <li class="list-group-item"><h3>יום חמישי, חדר 2101</h3></li>
+            <li id="mysql-t1400" class="list-group-item"><h4>14:00 דברי פתיחה, חיים צדוק וג'יל אנוליק מחברת-MySQL/Oracle</h4>
+              <p></p>
+              <!-- <dl><dt>אודות המרצה</dt><dd>
+
+              </dd></dl> -->
+            </li>
+            <li id="mysql-t1415" class="list-group-item"><h4>14:15 נעים להכיר MySQL, חיים צדוק </h4>
+              <p>חיים יסביר מה הם המרכיבים, הכלים והתכונות המרכזיות הקיימות ב-MySQL, אופן ההתקנה של MySQL (כולל הדגמות חיות), ארכיטקטורה מרכזית, ניהול בסיסי של MySQL ודוגמאות מהשטח. </p>
+              <!-- <dl><dt>אודות המרצה</dt><dd>
+
+              </dd></dl> -->
+            </li>
+            <li id="mysql-t1530" class="list-group-item"><h4>15:30 מה חדש ב- MySQL8, רונן ברעם מחברת MySQL/Oracle</h4>
+              <p>רונן ידבר על החידושים והתפתחויות הצפויות ב - MySQL 8 - הגרסא הבאה של MySQL, אם נספיק רונן יסביר וידגים על הדבר החם הבא -  InnoDB cluster - דרך לנהל קלסטר MySQL עם יתירות, שרידות וזמינות גבוהים.</p>
+              <!-- <dl><dt>אודות המרצה</dt><dd>
+
+              </dd></dl> -->
+            </li>
+            <li id="mysql-t1630" class="list-group-item"><h4>16:30 פתרונות קוד פתוח לבעיות ב-MySQL: Reliable failovers, Safe schema migrations, שלומי נח מחברת GitHub</h4>
+              <p>שלומי נח, גורו MySQL, ידבר על הפתרונות קוד פתוח הקיימים ב-Github, הבאים לפתור בעיות נפוצות ב-MySQL במיוחד בנושאי Availability ו - Usability, כגון: בעיות ב-Failovers, ו- Schema migrations.</p>
+              <!-- <dl><dt>אודות המרצה</dt><dd>
+
+              </dd></dl> -->
+            </li>
+            <li id="mysql-t1700" class="list-group-item"><h4>17:00 DR drills from hours to minutes, ירון אמיר מחברת Outbrain</h4>
+              <p>תרגיל DR מתחיל ב"חדר מלחמה"...  כל המהנדסים נכנסים לחדר אחד, פותחים צ'אט, ומתחילים לעבור על הפרוצדורה.... מנשה מוריד את האפליקציה, דידי מעביר את הדאטאבייס, מיכל משנה את הקונפיגורציה.... וככה לכל מערכת...</p>
+              <!-- <dl><dt>אודות המרצה</dt><dd>
+
+              </dd></dl> -->
+            </li>
+          </ul>
         </div>
       </div>
     </div> <!-- end tracks-content -->
