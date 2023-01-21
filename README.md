@@ -1,4 +1,4 @@
-Website for August Penguin 2018  http://ap.hamakor.org.il
+Website for August Penguin http://ap.hamakor.org.il
 
 ## Suggesting Changes
 
@@ -9,7 +9,7 @@ Website for August Penguin 2018  http://ap.hamakor.org.il
 
 ### Using Standard Git flow
 
-* Fork and clone the repo (it should automatically use the latest branch - ap2018)
+* Fork and clone the repo (it should automatically use the latest branch - ap2023)
 * edit the files locally
 * You can open the local html files directly in a browser, or you can use Python's built-in http module (or any other way to serve files):
 ```
