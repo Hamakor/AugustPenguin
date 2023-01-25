@@ -1,0 +1,19 @@
+name: deploy-on-push
+run-name: ${{ github.actor }} is deploying to hamakor server
+on:
+  push:
+    branches:
+      - ap2023
+jobs:
+  deploy-branch-to-server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          server: 'srv6.hamakor.org.il'
+          username: ${{ secrets.AP_SFTP_USERNAME }}
+          password: ${{ secrets.AP_SFTP_PASSWORD }}
+          sftp_only: true
+          local_path: './*'
+          remote_path: '/www/2023'
