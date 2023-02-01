@@ -6,6 +6,7 @@ on:
       - ap2023
 jobs:
   deploy-branch-to-server:
+    if: github.repository == 'Hamakor/AugustPenguin'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
