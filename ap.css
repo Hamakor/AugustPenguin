@@ -179,6 +179,10 @@ h1, h2 {
   margin-bottom: 50px;
 }
 
+.presentation {
+    width: 20px;
+}
+
 /* animation time! */
 @media screen and (min-width: 400px) {
   #greetings:hover:before {
