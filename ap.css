@@ -179,8 +179,12 @@ h1, h2 {
   margin-bottom: 50px;
 }
 
-.presentation {
+.talkicon {
     width: 20px;
+}
+
+.talkicon-nospace {
+    width: 10px;
 }
 
 /* animation time! */
