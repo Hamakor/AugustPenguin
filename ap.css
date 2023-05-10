@@ -337,7 +337,6 @@ h1, h2 {
 }
 
 .inner-logo-sec div {
-  font-size: 30px;
   padding-right: 14px;
 }
 
@@ -370,4 +369,85 @@ h1, h2 {
   border: 1px solid silver;
   text-align: center;
   width: 10%
+}
+
+/* talk-links bar. Supports slides and video */
+ul.talklinks, ul.talklinks-ltr {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+ul.talklinks > li {
+  display: inline-block;
+  border-left: solid 1px #d7d7d7;
+  padding: 4px 6px 4px 14px;
+}
+
+ul.talklinks > li:last-child {
+  border-left: none;
+}
+
+ul.talklinks-ltr > li {
+  display: inline-block;
+  border-right: solid 1px #d7d7d7;
+  padding: 4px 14px 4px 6px;
+}
+
+ul.talklinks-ltr > li:last-child {
+  border-right: none;
+}
+
+ul.talklinks > li > a, ul.talklinks-ltr > li > a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul.talklinks > li > a.talk-slides:before, ul.talklinks-ltr > li > a.talk-slides:before {
+  display: inline-block;
+  background-image: url('images/PowerPoint_Presentation_Flat_Icon.png');
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  content: '';
+}
+
+ul.talklinks > li > a.talk-slides:before {
+  margin-left: 4px;
+}
+
+ul.talklinks-ltr > li > a.talk-slides:before {
+  margin-right: 4px;
+}
+
+ul.talklinks > li > a.talk-video:before, ul.talklinks-ltr > li > a.talk-video:before {
+  display: inline-block;
+  background-image: url('images/PeerTube.png');
+  background-size: 12px;
+  width: 12px;
+  height: 16px;
+  vertical-align: middle;
+  content: '';
+}
+
+ul.talklinks > li > a.talk-yt:before, ul.talklinks-ltr > li > a.talk-yt:before {
+  display: inline-block;
+  background-image: url('images/youtube.jpg');
+  background-size: 24px;
+  width: 24px;
+  height: 18px;
+  vertical-align: middle;
+  content: '';
+}
+
+ul.talklinks > li > a.talk-yt:before {
+  margin-left: 4px;
+}
+
+ul.talklinks-ltr > li > a.talk-yt:before {
+  margin-right: 4px;
 }
